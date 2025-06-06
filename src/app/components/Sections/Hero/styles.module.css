@@ -1,0 +1,346 @@
+/* Original Hero Styles */
+.hero {
+    margin: 48px 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.heroBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* gap: 36px; */
+    gap: 30px;
+}
+
+.heroContent, .heroText {
+    display: flex;
+    flex-direction: column;
+    /* gap: 36px; */
+    gap: 30px;
+    max-width: 300px;
+}
+
+.heroTitle {
+    font-size: var(--fs-h2);
+}
+
+.heroTitle span {
+    font-size: var(--fs-h1);
+    line-height: 140%;
+    color: var(--clr-prime);
+}
+
+.heroDesc {
+    font-size: var(--fs-p4);
+    font-weight: 700;
+    color: var(--clr-grey);
+}
+
+.heroDesc span {
+    color: var(--clr-prime);
+}
+
+.heroBtns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 22px;
+}
+
+.heroBtns p {
+    font-size: var(--fs-p3);
+    font-weight: 700;
+}
+
+.btnBox {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.btnBox a {
+    padding: 12px 14px;
+    font-size: var(--fs-p4);
+    font-weight: 700;
+    background-color: var(--clr-grey-drk);
+    border-radius: 200px;
+    /* display: flex;
+    gap: 4px; */
+}
+
+.primeBtn {
+    background: var(--gl-d2l);
+    color: var(--clr-white);
+}
+
+.primeBtn:hover {
+    background: var(--clr-body);
+}
+
+.primeBtn span {
+    display: inline-block;
+    transform: translateX(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+.primeBtn:hover span {
+    transform: translateX(2px);
+}
+
+.greyBtn:hover {
+    background: transparent;
+    color: var(--clr-body);
+    outline: 1px solid var(--clr-body);
+}
+
+.heroVid {
+    flex-shrink: 0;
+    padding: 0 20px;
+    max-width: 400px;
+}
+
+.vidBox {
+    width: 100%;
+}
+
+.vidBox img {
+    width: 100%;
+    height: 100%;
+}
+
+.heroBgElem {
+    display: none;
+}
+
+/* Video Thumbnail Styles */
+.videoThumbnail {
+    position: relative;
+    cursor: pointer;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.videoThumbnail:hover {
+    transform: scale(1.02);
+}
+
+.thumbnailImage {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.playButton {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s ease;
+}
+
+.videoThumbnail:hover .playButton {
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+/* Video Overlay Styles */
+.videoOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(8px);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    animation: fadeIn 0.3s ease-out;
+}
+
+.videoContainer {
+    position: relative;
+    width: 90%;
+    max-width: 1200px;
+    aspect-ratio: 16/9;
+    background: #000;
+    border-radius: 12px;
+    overflow: hidden;
+    animation: scaleIn 0.4s ease-out;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+}
+
+.closeButton {
+    position: absolute;
+    top: -50px;
+    right: 0;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: white;
+    transition: all 0.3s ease;
+    z-index: 10001;
+}
+
+.closeButton:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.1);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8) translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+/* Desktop Styles */
+@media(min-width: 1024px) {
+    .hero {
+        margin: 100px 0 0 0;
+        text-align: left;
+        position: relative;
+    }
+
+    .heroBox {
+        flex-direction: row;
+        gap: 100px;
+    }
+
+    .heroContent, .heroText {
+        flex-direction: column;
+        /* gap: 36px; */
+        gap: 28px;
+        max-width: 550px;
+    }
+
+    .heroTitle {
+        font-size: var(--fs-h4);
+        font-weight: 300;
+    }
+
+    .heroTitle span {
+        font-size: var(--fs-h1);
+        font-weight: 700;
+        line-height: 120%;
+        color: var(--clr-prime);
+    }
+
+    .heroDesc {
+        padding: 0 10px 0 0;
+        font-size: var(--fs-p4);
+        font-weight: 400;
+        color: var(--clr-grey);
+        line-height: 150%;
+    }
+
+    .heroDesc span {
+        color: var(--clr-prime);
+        font-weight: 700;
+    }
+
+    .heroBtns {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 22px;
+        padding: 20px;
+    }
+
+    .heroBtns p {
+        font-size: var(--fs-p4);
+        font-weight: 500;
+    }
+
+    .btnBox {
+        display: flex;
+        max-width: max-content;
+        gap: 22px;
+    }
+
+    .btnBox a {
+        padding: 10px 24px;
+        font-size: var(--fs-p4);
+        font-weight: 500;
+        background-color: var(--clr-grey-drk);
+        border-radius: 200px;
+        /* display: flex;
+        gap: 4px; */
+    }
+
+    .heroVid {
+        flex-shrink: 0;
+        padding: 0 20px;
+        max-width: 600px;
+    }
+
+    .vidBox {
+        width: 500px;
+        box-shadow: 316px 0px 250px 0px rgba(255, 136, 0, 0.15);
+    }
+
+    .vidBox img {
+        width: 100%;
+        height: 100%;
+        box-shadow: 79px 0px 174px 0px rgba(255, 136, 0, 0.17);
+    }
+
+    .heroBgElem {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -1;
+        height: 540px;
+        overflow: hidden;
+    }
+
+    .heroBgElem img {
+        width: 600px;
+        height: 100%;
+    }
+}
+
+/* Mobile Responsive for Video Popup */
+@media (max-width: 768px) {
+    .videoContainer {
+        width: 95%;
+        margin: 0 auto;
+    }
+    
+    .closeButton {
+        top: -40px;
+        width: 36px;
+        height: 36px;
+    }
+    
+    .videoOverlay {
+        padding: 10px;
+    }
+}

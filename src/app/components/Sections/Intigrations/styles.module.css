@@ -1,0 +1,130 @@
+.integrations {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .integrations {
+        gap: 20px;
+    }
+    .integrationsBox {
+        max-width: 740px;
+    }
+    .integrationsContent {
+        gap: 18px;
+    }
+}
+
+
+@media (min-width: 1024px) {
+    .integrations {
+        margin: 100px auto 0 auto;
+        display: flex;
+        gap: 30px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .integrationsBox {
+        max-width: 820px;
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+    }
+
+    .integrationsContent {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .integrationsTitle {
+        font-size: var(--fs-h4);
+        font-weight: 700;
+        color: var(--clr-prime);
+    }
+
+    .integrationsDescription {
+        font-size: var(--fs-p4);
+        font-weight: 400;
+        color: var(--clr-grey);
+        max-width: 750px;
+    }
+
+    .intNav {
+        display: flex;
+        gap: 22px;
+        flex-wrap: wrap;
+        background: #B0B0B00D;
+        padding: 20px 38px 30px 25px;
+        border-radius: 16px;
+        border: 1px solid var(--clr-grey-drk);
+    }
+
+    .intNavItem {
+        padding: 12px;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
+    .intNavItem:hover {
+        background: #FF780A2E;
+        outline: 1px solid var(--clr-prime);
+        transition: all 0.2s ease-in-out;
+    }
+
+    .intNavItem.active {
+        padding: 12px;
+        border-radius: 8px;
+        outline: 1px solid var(--clr-prime);
+        cursor: pointer;
+
+        background: #FF780A2E;
+
+    }
+
+    .intNavItem p {
+        font-size: var(--fs-p4);
+    }
+
+
+
+    .initDynamicBox {
+        width: 540px;
+        height: 360px;
+        overflow: hidden;
+        background-color: var(--clr-white);
+        box-shadow: 35px 10px 78.75px 0px #FF9A0A1A;
+        border-radius: 30px;
+        display: grid;
+        place-content: center;
+    }
+
+    .initImg {
+        width: 100%;
+        height: 240px; /* Match your image height */
+        overflow: hidden;
+    }
+
+    .imageContainer {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .imageContainer img {
+        width: auto !important;
+        height: 100% !important;
+        object-fit: cover;
+        transition: transform 0.5s ease-in-out;
+    }
+
+    /* Alternative approach - if you want to use background-image instead */
+    .initImgBackground {
+        width: 100%;
+        height: 500px;
+        background-image: url('/assets/int.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        transition: background-position 0.5s ease-in-out;
+    }
+}

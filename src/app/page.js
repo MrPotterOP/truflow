@@ -1,95 +1,107 @@
+import Navbar from "./components/Sections/Navbar/Navbar";
+import Hero from "./components/Sections/Hero/Hero";
+import Milestone from "./components/Sections/Milestone/Milestone";
+import Process from "./components/Sections/Process/Process";
+import Services from "./components/Sections/Services/Services";
+import Product from "./components/Sections/Product/Product";
+import Catagories from "./components/Sections/Catagories/Catagories";
+import Features from "./components/Sections/Features/Features";
+import Integrations from "./components/Sections/Intigrations/Intigrations";
+import LeadForm from "./components/Sections/LeadForm/LeadForm";
+import Footer from "./components/Sections/Footer/Footer";
+
+import Link from "next/link";
 import Image from "next/image";
-import styles from "./page.module.css";
+
+import styles from './page.module.css';
+
+import ImagesScroll from "./components/UI/ImgsScroll/ImagesScroll";
+
+
 
 export default function Home() {
-  return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>src/app/page.js</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
 
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
+
+  // Single use component
+  const IntigrationsImgs = () => {
+    return (
+        <div className={styles.integrationsImgsBox}>
+            <p>Intigrates with: </p>
+
+            <ImagesScroll
+                imgs={['/assets/logo.png', '/assets/grad.png', '/assets/heroBgElem.png', '/assets/logo.png', '/assets/logo.png', '/assets/logo.png', '/assets/logo.png', '/assets/logo.png']}
+                height="22px"
+                speed={18}
+                direction="left"
+                gap="60px"
+                pauseOnHover={true}
+                className={styles.integrationsImgs}
             />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
         </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+    );
+  };
+
+  const Promo = () => {
+    return (
+      <div className={styles.promoBox}>
+          <div className={styles.promoContent}>
+              <h4 className={styles.promoTitle}>
+                Revenue Blind Spots Are Costing You Growth
+              </h4>
+              <p className={styles.promoDesc}>
+                Today&apos;s brands and enterprises operate in silos — data is fragmented, reporting is delayed, and decision-making is guesswork. Whether you&apos;re D2C, omnichannel, or enterprise, one truth remains:
+              </p>
+
+              <div className={styles.promoTaglines}>
+                  <p className={styles.tagline}>
+                    You can&apos;t grow what you can&apos;t measure.
+                  </p>
+
+                  <p className={styles.tagline}>
+                    TruFlo fixes that!
+                  </p>
+              </div>
+
+              <Link href="#" className={styles.btnPrime}>
+                  Talk to us
+              </Link>
+          </div>
+      </div>
+    );
+  }
+
+  const ISO = () => {
+    return (
+        <div className={styles.isoBox}>
+            <div className={styles.isoContent}>
+              <div className={styles.isoLogo}>
+                  <Image src="/assets/iso.png" alt="ISO" width={300} height={300} />
+              </div>
+
+              <p className={styles.isoDesc}>
+                Your data stays protected with enterprise-grade security
+              </p>
+            </div>
+        </div>
+    )
+  }
+
+  return (
+    <main>
+      <Navbar />
+      <Hero />
+      <IntigrationsImgs />
+      <Milestone />
+      <Promo />
+      <Process />
+      <Services />
+      <Product />
+      <Catagories />
+      <Features />
+      <Integrations />
+      <ISO />
+      <LeadForm />
+      <Footer />
+    </main>
   );
 }

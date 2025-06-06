@@ -1,0 +1,265 @@
+/* Mobile-first responsive design */
+.milestone {
+  background: var(--gl-blue);
+  padding: 80px 0 60px 0;
+  margin: 40px 0 0 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.container {
+
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.header {
+  text-align: center;
+  max-width: 240px;
+  margin: 0 auto 68px auto;
+}
+
+.title {
+  color: var(--clr-prime);
+  font-weight: 700;
+  line-height: 1.2;
+  font-size: var(--fs-h2);
+}
+
+/* Mobile layout - vertical stack */
+.metrics {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 72px;
+  margin-bottom: 60px;
+}
+
+.metric {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: min-content;
+  position: relative;
+}
+
+/* Adding a horizontal line after each metric */
+
+
+
+
+.metricValue {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 8px;
+  padding: 0 34px;
+  width: max-content;
+}
+
+.value {
+  color: var(--clr-prime);
+  font-weight: 600;
+  font-size: var(--fs-p1);
+  line-height: 1.1;
+}
+
+.label {
+  color: var(--clr-white);
+  font-weight: 600;
+  font-size: var(--fs-p1);
+  line-height: 1.2;
+}
+
+.description {
+  color: var(--clr-white);
+  font-size: var(--fs-p3);
+  line-height: 1.4;
+  font-weight: 700;
+  max-width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* Adding a horizontal line after each descriton on bottom and in center */
+
+.description::after {
+  content: '';
+  position: absolute;
+  bottom: -36px;
+  left: calc(50% - 230px / 2);
+  height: .5px;
+  width: 230px;
+  z-index: 9999;
+  background: var(--clr-grey);
+}
+
+.metrics .metric:last-child .description::after {
+  display: none;
+}
+/* Brand logos section */
+.logoPlaceholder img{
+  height: 42px !important;
+}
+
+
+
+
+/* Tablet styles */
+@media (min-width: 768px) {
+  .milestone {
+    padding: 80px 0;
+  }
+
+  /* .container {
+    padding: 0 120px;
+  } */
+
+  .header {
+    margin-bottom: 60px;
+    display: grid;
+    place-content: center;
+  }
+
+  .title {
+    font-size: var(--fs-h4);
+    width: max-content;
+    margin: 0 auto;
+  }
+
+  .metrics {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px 32px;
+    margin-bottom: 80px;
+  }
+
+  .metric {
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .value {
+    font-size: var(--fs-p2);
+  }
+
+  .label {
+    font-size: var(--fs-p2);
+  }
+
+  .description {
+    font-size: var(--fs-p4);
+    max-width: fit-content;
+    font-weight: 400;
+  }
+
+  .description::after {
+    display: none;
+  }
+
+  .logoPlaceholder {
+    font-size: var(--fs-p4);
+    max-width: 160px;
+  }
+}
+
+/* Desktop styles */
+@media (min-width: 1024px) {
+  .milestone {
+    padding: 100px 0;
+  }
+
+  /* .container {
+    padding: 0 60px;
+  } */
+
+  .header {
+    margin-bottom: 80px;
+  }
+
+  .title {
+    font-size: var(--fs-h4);
+  }
+
+  /* Desktop layout - horizontal */
+  .metrics {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 24px;
+    margin-bottom: 100px;
+  }
+
+  .metric {
+    flex: 1;
+    text-align: center;
+    align-items: center;
+    padding: 0 8px;
+    position: relative;
+  }
+
+  /* Add subtle dividers between metrics on desktop */
+  .metric:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    right: -12px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 60px;
+    background: var(--clr-grey-lt);
+  }
+
+  .description::after {
+    display: none;
+  }
+
+  .metricValue {
+    margin-bottom: 12px;
+  }
+
+  .label {
+    font-size: var(--fs-p2);
+  }
+
+  .brands {
+    margin: 0 auto;
+    max-width: 1800px;
+  }
+
+  .brandBox {
+    gap: 140px !important;
+  }
+
+  .logoPlaceholder img{
+    height: 54px !important;
+  }
+}
+
+
+/* Accessibility and performance optimizations */
+@media (prefers-reduced-motion: reduce) {
+  .brandLogo {
+    transition: none;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .value {
+    color: var(--clr-white);
+  }
+  
+  .description {
+    color: var(--clr-grey-lt);
+  }
+}
+
+/* Focus states for accessibility */
+.brandLogo:focus-within {
+  outline: 2px solid var(--clr-prime);
+  outline-offset: 4px;
+  border-radius: 4px;
+}

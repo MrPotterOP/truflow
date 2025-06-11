@@ -1,0 +1,161 @@
+.chatButton {
+  position: fixed;
+  z-index: 9999;
+  display: none; /* Hidden by default, shown only on mobile */
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+
+@media (max-width: 768px) {
+  .chatButton {
+    display: flex;
+  }
+}
+
+/* Size variations */
+.sizeSmall {
+  width: 48px;
+  height: 48px;
+  padding: 12px;
+}
+
+.sizeMedium {
+  width: 56px;
+  height: 56px;
+  padding: 14px;
+}
+
+.sizeLarge {
+  width: 64px;
+  height: 64px;
+  padding: 16px;
+}
+
+/* Alignment classes */
+.alignLeft {
+  left: var(--chat-side, 20px);
+}
+
+.alignRight {
+  right: var(--chat-side, 20px);
+}
+
+/* Color variants */
+.variantPrimary {
+  background: var(--gl-d2l);
+  color: white;
+}
+
+.variantSecondary {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  color: white;
+}
+
+
+.variantDark {
+  background: linear-gradient(135deg, #434343 0%, #000000 100%);
+  color: white;
+}
+
+.variantLight {
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+  color: #333333;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Hover and focus states */
+.chatButton:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 25px 0 rgba(0, 0, 0, 0.25);
+}
+
+.chatButton:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.3);
+}
+
+.chatButton:active {
+  transform: scale(0.95);
+}
+
+/* Icon styles */
+.chatIcon {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.2s ease;
+}
+
+.chatButton:hover .chatIcon {
+  transform: scale(1.1);
+}
+
+/* Pulse animation for attention */
+.chatButton::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  border-radius: 50%;
+  background: inherit;
+  z-index: -1;
+  animation: pulse 2s infinite;
+  opacity: 0;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  50% {
+    transform: scale(1.15);
+    opacity: 0.3;
+  }
+  100% {
+    transform: scale(1.3);
+    opacity: 0;
+  }
+}
+
+/* Accessibility improvements */
+@media (prefers-reduced-motion: reduce) {
+  .chatButton {
+    transition: none;
+  }
+  
+  .chatButton::before {
+    animation: none;
+  }
+  
+  .chatIcon {
+    transition: none;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .chatButton {
+    border: 2px solid currentColor;
+  }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .variantLight {
+    background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%);
+    color: #e2e8f0;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+}

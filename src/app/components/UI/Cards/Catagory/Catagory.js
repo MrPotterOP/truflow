@@ -8,7 +8,7 @@ function Catagory({
     className,
 }) {
     return ( 
-        <div className={`${styles.catagory} ${className}`}>
+        <div className={`${styles.catagory} ${className} `}>
             <div className={styles.iconBox}>
                 <div className={styles.icon}>
                     <Image src={icon} alt="icon" width={40} height={40} />

@@ -52,7 +52,7 @@
 
     .intNav {
         display: flex;
-        gap: 22px;
+        gap: 12px;
         flex-wrap: wrap;
         background: #B0B0B00D;
         padding: 20px 38px 30px 25px;

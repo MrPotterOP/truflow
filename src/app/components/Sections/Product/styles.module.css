@@ -112,6 +112,7 @@
 
 .prodTagline {
     max-width: 320px;
+    margin-top: 36px;
 }
 
 .prodTagline p {
@@ -172,8 +173,8 @@
     .productContent {
         padding: 24px 20px;
         border-radius: 30px;
-        background: var(--gl-fade-lt);
-        border: .5px solid var(--clr-grey-drk);
+        /* background: var(--gl-fade-lt);
+        border: .5px solid var(--clr-grey-drk); */
         max-width: 700px;
         gap: 24px;
     }
@@ -250,6 +251,10 @@
         max-height: 540px;
     }
 
+    .prodDisplayDynamic .prodDisplayDynamicBox:nth-child(2) {
+        max-height: 650px;
+    }
+
     .prodDisplayDynamicBox img {
         height: 100%;
         width: 100%;
@@ -262,11 +267,13 @@
     .prodTagline {
         max-width: 100%;
         text-align: left;
+        margin: 0 0 0 40px;
+        padding: 22px;
     }
 
     .prodTagline p {
-        font-size: var(--fs-p2);
-        font-weight: 700;
+        font-size: var(--fs-p3);
+        font-weight: 500;
         color: var(--clr-body);
     }
 }

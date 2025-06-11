@@ -1,10 +1,10 @@
-import styles from './styles.module.css';
-import Image from 'next/image';
+'use client';
 
+import { motion } from 'framer-motion';
+import styles from './styles.module.css';
 import Catagory from '../../UI/Cards/Catagory/Catagory';
 
 function Catagories() {
-
     const catagories = [
         {
             title: "Consumer Brands",
@@ -33,21 +33,47 @@ function Catagories() {
         }
     ];
 
+    // Variants for parent container
+    const container = {
+        hidden: {},
+        show: {
+            transition: {
+                staggerChildren: 0.2,
+            }
+        }
+    };
+
+    // Variants for child cards
+    const item = {
+        hidden: { opacity: 0, y: 20 },
+        show: { opacity: 1, y: 0, transition: { duration: 0.4, ease: 'easeOut' } }
+    };
+
     return ( 
         <section className={styles.catagories} id='catagories'>
-            <h3 className={styles.catTitle}>Built for the Most <span> Ambitious Teams</span> in Commerce</h3>
+            <h3 className={styles.catTitle}>
+                Built for the Most <span> Ambitious Teams</span> in Commerce
+            </h3>
 
-            <div className={styles.catBox}>
-                {
-                    catagories.map((catagory, index) => {
-                        return (
-                            <Catagory key={index} {...catagory} />
-                        )
-                    })
-                }
-            </div>
+            <motion.div
+                className={styles.catBox}
+                variants={container}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: true, amount: 0.2 }}
+            >
+                {catagories.map((catagory, index) => (
+                    <motion.div
+                        key={index}
+                        variants={item}
+                        className={styles.catCard}
+                    >
+                        <Catagory {...catagory} />
+                    </motion.div>
+                ))}
+            </motion.div>
         </section>
-     );
+    );
 }
 
 export default Catagories;

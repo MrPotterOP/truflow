@@ -57,6 +57,24 @@
 }
 
 
+.btnPrime:hover {
+    background: var(--clr-white);
+    color: var(--clr-prime);
+    outline: 2px solid var(--clr-prime);
+}
+
+.success, .error {
+    font-size: var(--fs-p3);
+    font-weight: 500;
+    color: rgb(238, 59, 59);
+    text-align: center;
+}
+
+.success {
+    color: rgb(0, 122, 0);
+}
+
+
 @media (min-width: 768px) {
 
    .form {
@@ -80,12 +98,21 @@
 
     .formInput label {
         font-size: var(--fs-p5);
+        font-weight: 400;
     }
 
     .formInput input {
         font-size: var(--fs-p3);
         font-weight: 600;
     }
+
+    .formInput input:placeholder-shown {
+        font-size: var(--fs-p4);
+        font-weight: 500;
+        color: rgba(128, 128, 128, 0.125);
+    }
+
+    
 
 
 

@@ -3,6 +3,8 @@
 import { useState } from 'react';
 import styles from './styles.module.css';
 
+import Link from 'next/link';
+
 const Services = () => {
   const [activeService, setActiveService] = useState('outcome');
   const [showLess, setShowLess] = useState(false);
@@ -12,8 +14,8 @@ const Services = () => {
       id: 'software',
       name: 'Software-as-a-Service',
       title: 'Software-as-a-Service (SaaS)',
-      subtitle: 'Fully managed solution',
-      description: 'Complete software solutions delivered over the cloud, managed and maintained by our team while you focus on your core business.',
+      subtitle: 'For fast-moving brands',
+      description: 'Plug-and-play dashboards, RCA workflows, and alerts. Perfect for brands that need instant visibility and actionable insights, without complex setup.',
       cards: [
         {
           title: 'Cloud Solutions',
@@ -41,8 +43,8 @@ const Services = () => {
       id: 'platform',
       name: 'Platform-as-a-Service',
       title: 'Platform-as-a-Service (PaaS)',
-      subtitle: 'Development platform',
-      description: 'Complete development and deployment platform that enables you to build, test, and deploy applications quickly.',
+      subtitle: 'For system integrators and consultants',
+      description: "Build client-facing solutions on top of TruFlo's platform. Perfect for system integrators and consultants who want to offer revenue intelligence to their clients.",
       cards: [
         {
           title: 'Development Tools',
@@ -70,8 +72,8 @@ const Services = () => {
       id: 'data',
       name: 'Data-as-a-Service',
       title: 'Data-as-a-Service (DaaS)',
-      subtitle: 'Data solutions',
-      description: 'Comprehensive data management and analytics solutions to unlock insights from your business data.',
+      subtitle: 'For your BI team',
+      description: "Sync TruFlo's unified data into your internal analytics stack using APIs and warehouse connectors. No platform shift required.",
       cards: [
         {
           title: 'Data Analytics',
@@ -99,8 +101,8 @@ const Services = () => {
       id: 'outcome',
       name: 'Outcome-as-a-Service',
       title: 'Outcome-as-a-Service (OaaS)',
-      subtitle: 'Fully managed solution',
-      description: 'We run your performance marketing, marketplaces, and GTM operations — fully managed. Let our experts handle execution while you focus on strategic decisions.',
+      subtitle: 'Fully managed execution',
+      description: "We run your performance marketing, marketplaces, and GTM ops end-to-end. So your team can focus on strategy, not operations.",
       cards: [
         {
           title: 'Commerce & Marketing Strategy',
@@ -129,7 +131,7 @@ const Services = () => {
   const currentService = services.find(service => service.id === activeService);
 
   return (
-    <section className={styles.services}>
+    <section id="services" className={styles.services}>
       <div className={styles.container}>
         <div className={styles.header}>
           <h2 className={styles.title}>
@@ -160,18 +162,23 @@ const Services = () => {
                 <p className={styles.serviceSubtitle}>{currentService.subtitle}</p>
                 <p className={styles.serviceDescription}>{currentService.description}</p>
               </div>
-              <button className={styles.talkButton}>Talk to us</button>
+              {/* <button className={styles.talkButton}>Talk to us</button> */}
+              <Link className={styles.talkButton} href="#leadForm">Talk to us</Link>
             </div>
 
             <div className={`${styles.serviceCards} ${showLess ? styles.collapsed : ''}`}>
               {currentService.cards.map((card, index) => (
-                <div key={index} className={styles.serviceCard} >
+                <div key={index} className={`${styles.serviceCard} gradBorderMix`} >
                   <h4 className={styles.cardTitle}>{card.title}</h4>
                   <p className={styles.cardDescription}>{card.description}</p>
-                  <button className={styles.cardCta}>
+                  {/* <button className={styles.cardCta}>
                     {card.cta}
                     <span className={styles.arrow}>→</span>
-                  </button>
+                  </button> */}
+                  <Link className={styles.cardCta} href="#leadForm">
+                    {card.cta}
+                    <span className={styles.arrow}>→</span>
+                  </Link>
                 </div>
               ))}
             </div>

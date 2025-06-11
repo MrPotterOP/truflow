@@ -44,11 +44,13 @@
 }
 
 .heroBtns {
+    margin: 40px 0 0 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 22px;
 }
+
 
 .heroBtns p {
     font-size: var(--fs-p3);
@@ -271,7 +273,9 @@
         align-items: flex-start;
         gap: 22px;
         padding: 20px;
+        margin: 0;
     }
+
 
     .heroBtns p {
         font-size: var(--fs-p4);
@@ -301,7 +305,7 @@
     }
 
     .vidBox {
-        width: 500px;
+        width: 100%;
         box-shadow: 316px 0px 250px 0px rgba(255, 136, 0, 0.15);
     }
 

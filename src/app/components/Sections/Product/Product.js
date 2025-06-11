@@ -5,6 +5,8 @@ import Image from 'next/image';
 import { useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 
+import { fadeBlur, transitionFade } from '../../../animations';
+
 function Product() {
 
     const products = [
@@ -18,7 +20,7 @@ function Product() {
         },
         {
             title: "Take action — through insights or our managed execution service",
-            img: "/assets/prod1.png",
+            img: "/assets/prod3.png",
         }
     ]
 
@@ -42,7 +44,7 @@ function Product() {
                 </div>
 
                 <div className={styles.productContentBox}>
-                    <div className={styles.productContent}>
+                    <div className={`${styles.productContent} gradBorderFade`}>
                         {
                             products.map((prod, index) => {
                                 return (
@@ -62,7 +64,7 @@ function Product() {
 
                         <div className={styles.prodDisplayDynamic}>
                             <AnimatePresence>
-                                <motion.div className={styles.prodDisplayDynamicBox} key={product.img} initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
+                                <motion.div className={styles.prodDisplayDynamicBox} key={product.img} initial={{ opacity: 0, scale: 0.5 }} animate={{ opacity: 1, scale: 1 }}>
                                     <Image src={product.img} alt="product" width={800} height={600} />
                                 </motion.div>
                             </AnimatePresence>
@@ -70,12 +72,23 @@ function Product() {
                     </div>
                 </div>
 
+                <div className={`${styles.prodTagline} highlight`}>
+                    <motion.p
+                        initial="hidden"
+                        transition={transitionFade}
+                        variants={fadeBlur}
+                        whileInView="visible"
+                        viewport={{ once: true, margin: "0px 0px -100px 0px" }}
+
+                    >We&apos;re not just a dashboard. We&apos;re your revenue co-pilot.</motion.p>
+                </div>
+
             </div>
             
 
-            <div className={styles.prodTagline}>
+            {/* <div className={`${styles.prodTagline} highlight`}>
                     <p>We&apos;re not just a dashboard. We&apos;re your revenue co-pilot.</p>
-            </div>
+            </div> */}
 
         </div>
      );

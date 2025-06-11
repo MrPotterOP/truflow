@@ -1,0 +1,240 @@
+.integrationsImgsBox {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding: 30px 0 0 10px;
+}
+
+.integrationsImgsBox p {
+    font-size: var(--fs-p6);
+    font-weight: 600;
+    color: var(--clr-grey);
+    display: none;
+}
+
+.promoBox {
+    margin: 48px 0 0 0;
+    position: relative;
+}
+
+.promoBox::after {
+    content: '';
+    position: absolute;
+    bottom: -48px;
+    left: calc(50% - 280px / 2);
+    height: .5px;
+    width: 280px;
+    z-index: 9999;
+    background: var(--clr-grey-drk);
+}
+
+.promoContent {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    text-align: center;
+    max-width: 320px;
+}
+
+.promoTitle {
+    font-size: var(--fs-h2);
+    font-weight: 700;
+    background: var(--gl-d2l);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    background-clip: text;
+    color: transparent;
+}
+
+.promoDesc {
+    color: var(--clr-grey);
+    font-size: var(--fs-p4);
+    font-weight: 700;
+}
+
+.promoTaglines {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.tagline {
+    font-size: var(--fs-p2);
+    font-weight: 700;
+
+    background: var(--gl-blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    background-clip: text;
+    color: transparent;
+}
+
+.tagline:last-child {
+
+    font-size: var(--fs-h1);
+
+    background: var(--gl-d2l);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+.btnPrime {
+    font-size: var(--fs-p2);
+    font-weight: 700;
+
+    background: var(--gl-d2l);
+    color: var(--clr-white);
+
+    padding: 17px;
+    width: 100%;
+    border-radius: 100px;
+    border: none;
+    cursor: pointer;
+}
+
+
+.isoBox {
+    margin: 48px 0 0 0;
+    width: 100%;
+    display: grid;
+    place-content: center;
+    text-align: center;
+}
+
+.isoContent {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+    width: 320px;
+}
+
+
+.isoLogo img {
+    width: 200px;
+    height: 100%;
+    object-fit: contain;
+}
+
+.isoDesc {
+    font-size: var(--fs-p3);
+    font-weight: 700;
+    color: var(--clr-grey);
+}
+
+
+
+
+@media (min-width: 768px) {
+
+    .promoBox {
+        margin: 100px 0 0 0;
+    }
+
+    .promoBox::after {
+        content: '';
+        position: absolute;
+        bottom: -100px;
+        left: calc(50% - 1000px / 2);
+        height: .5px;
+        width: 1000px;
+        z-index: 9999;
+        background: var(--clr-grey-drk);
+    }
+
+    .promoContent {
+        gap: 36px;
+        max-width: 920px;
+    }
+
+    .promoTitle {
+        font-size: var(--fs-h4);
+        font-weight: 700;
+        -webkit-background-clip: none;
+        -webkit-text-fill-color: var(--clr-prime);
+
+        background-clip: none;
+        color: var(--clr-prime);
+    }
+
+    .promoDesc {
+        color: var(--clr-grey);
+        font-size: var(--fs-p3);
+        font-weight: 400;
+        line-height: 140%;
+    }
+
+    .promoTaglines {
+        gap: 36px;
+    }
+
+    .tagline {
+        font-size: var(--fs-p1);
+        font-weight: 400;
+    }
+
+    .tagline:last-child {
+
+        font-size: var(--fs-h4);
+        font-weight: 700;
+        -webkit-background-clip: none;
+        -webkit-text-fill-color: var(--clr-prime);
+        background-clip: none;
+        color: var(--clr-prime);
+    }
+
+    .btnPrime {
+        font-size: var(--fs-p3);
+        font-weight: 700;
+
+        background: var(--gl-d2l);
+        color: var(--clr-white);
+
+        padding: 17.5px;
+        max-width: 320px;
+    }
+
+    .btnPrime:hover {
+        background: var(--clr-body);
+    }
+
+
+    .isoBox {
+        margin: 100px 0 0 0;
+    }
+
+    .isoContent {
+        width: 400px;
+    }
+
+
+    .isoLogo img {
+        width: 260px;
+    }
+
+    .isoDesc {
+        font-size: var(--fs-p2);
+    }
+
+}
+
+@media (min-width: 1024px) {
+    .integrationsImgsBox {
+        margin: 100px 0 0 0;
+        padding: 0 30px 0 80px;
+    }
+
+    .integrationsImgsBox p {
+        font-size: var(--fs-p5);
+        flex-shrink: 0;
+        display: block;
+    }
+
+}

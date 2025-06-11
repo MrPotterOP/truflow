@@ -52,7 +52,6 @@
   display: flex;
   align-items: baseline;
   justify-content: center;
-  gap: 8px;
   margin-bottom: 8px;
   padding: 0 34px;
   width: max-content;
@@ -70,6 +69,7 @@
   font-weight: 600;
   font-size: var(--fs-p1);
   line-height: 1.2;
+  margin-left: 8px;
 }
 
 .description {
@@ -100,6 +100,7 @@
 }
 /* Brand logos section */
 .logoPlaceholder img{
+  max-width: 140px !important;
   height: 42px !important;
 }
 

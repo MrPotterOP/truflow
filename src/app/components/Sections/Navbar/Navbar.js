@@ -22,7 +22,7 @@ function Navbar() {
                     <div className={styles.radGrad}>
                         <Image className={styles.radImg} src="/assets/grad.png" alt="RadGrad" width={1100} height={1100} />
                     </div>
-                    <Image className={styles.logoImg} src="/assets/logo.png" alt="Truflo" width={170} height={100} />
+                    <Link href="#"><Image className={styles.logoImg} src="/assets/logo.png" alt="Truflo" width={170} height={100} /></Link>
                 </div>
 
                 <div className={`${styles.navMenu} ${isActive ? styles.active : ''}`}>
@@ -33,16 +33,16 @@ function Navbar() {
 
                     <div className={styles.linksBox}>
                         <div className={styles.links}>
-                            <Link href="#">Products</Link>
-                            <Link href="#">Offerings</Link>
-                            <Link href="#">Features</Link>
-                            <Link href="#">Connectors</Link>
-                            <Link href="#">Outcomes</Link>
+                            <Link href="#product">Products</Link>
+                            <Link href="#services">Offerings</Link>
+                            <Link href="#features">Features</Link>
+                            <Link href="#integrations">Connectors</Link>
+                            <Link href="#milestone">Outcomes</Link>
                         </div>
 
                         <div className={styles.ctaBox}>
-                            <Link href="#" className={styles.txtBtn}>Login</Link>
-                            <Link href="#" className={styles.roundBtn}>Contact Us</Link>
+                            <Link href="#leadForm" className={styles.txtBtn}>Login</Link>
+                            <Link href="#leadForm" className={styles.roundBtn}>Contact Us</Link>
                         </div>
                         <div className={styles.xBox} onClick={toggleMenu}>
                             <Image src="/assets/x.png" alt="X" width={20} height={20} />

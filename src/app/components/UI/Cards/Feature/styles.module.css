@@ -3,7 +3,7 @@
     padding: 30px 14px;
     background-color: #F7F5F2;
     border-radius: 26px;
-    border: .6px solid var(--clr-prime);
+    /* border: .6px solid var(--clr-prime); */
 }
 
 .featureContent {
@@ -35,7 +35,7 @@
     .feature {
         width: 400px;
         padding: 40px 28px;
-        border: .8px solid var(--clr-prime);
+        /* border: .8px solid var(--clr-prime); */
     }
 
     .featureContent {

@@ -7,6 +7,8 @@ import ImagesScroll from '../../UI/ImgsScroll/ImagesScroll';
 import { motion } from 'framer-motion';
 import { fadeBlur, transitionFade } from '../../../animations';
 
+import Odometer from '../../UI/Odometer/Odometer';
+
 const Milestone = () => {
   const milestones = [
     {
@@ -50,18 +52,20 @@ const Milestone = () => {
   ];
 
   const brands = [
-    "/assets/logo.png",
-    "/assets/logo.png",
-    "/assets/logo.png",
-    "/assets/logo.png",
-    "/assets/logo.png",
-    "/assets/logo.png",
-    "/assets/logo.png",
-    "/assets/logo.png"
+    "/assets/logos/image 12.png",
+    "/assets/logos/image 13.png",
+    "/assets/logos/image 14.png",
+    "/assets/logos/image 15.png",
+    "/assets/logos/image 16.png",
+    "/assets/logos/image 17.png",
+    "/assets/logos/image 18.png",
+    "/assets/logos/image 19.png",
+    "/assets/logos/image 20.png",
+    "/assets/logos/image 21.png",
   ];
 
   return (
-    <section className={styles.milestone}>
+    <section id="milestone" className={styles.milestone}>
       <div className={styles.container}>
         <header className={styles.header}>
           <h2 className={styles.title}>Proven Outcomes for Leading Brands</h2>
@@ -75,20 +79,61 @@ const Milestone = () => {
           }}
           viewport={{ once: true }}
         >
-          {milestones.map((milestone) => (
-            <motion.div key={milestone.id} className={styles.metric}
-              variants={fadeBlur}
-              transition={transitionFade}
-            >
-              <div className={styles.metricValue}>
-                <span className={styles.value}>{milestone.value}</span>
-                {milestone.label && (
-                  <span className={styles.label}>{milestone.label}</span>
-                )}
-              </div>
-              <p className={styles.description}>{milestone.description}</p>
-            </motion.div>
-          ))}
+          <div className={styles.metric}>
+            <div className={styles.metricValue}>
+                <Odometer to={18} from={0} className={styles.value}/>
+              
+                <span className={styles.value}>x</span><span className={styles.label}>GMV</span>
+            </div>
+              <p className={styles.description}>For a leading cookware brand</p>
+          </div>
+
+          <div className={styles.metric}>
+            <div className={styles.metricValue}>
+
+                <Odometer to={4} from={0} className={styles.value} />
+                <span className={styles.value}>x</span><span className={styles.label}>ROAS</span>
+            </div>
+              <p className={styles.description}>For a legacy FMCG brand</p>
+          </div>
+
+          <div className={styles.metric}>
+            <div className={styles.metricValue}>
+              <span className={styles.value}>
+                <Odometer to={40} from={10} />
+                </span><span className={styles.label}> % → </span><span className={styles.value}> 
+                  <Odometer to={95} from={0} />
+                  </span><span className={styles.label}>%</span>
+            </div>
+              <p className={styles.description}>Inventory fill rate optimization</p>
+          </div>
+
+          <div className={styles.metric}>
+            <div className={styles.metricValue}>
+              <span className={styles.value}>
+                <Odometer to={4} from={0} />
+                </span><span className={styles.label}>Marketplaces</span>
+            </div>
+              <p className={styles.description}>Activated with revenue growth in 90 days</p>
+          </div>
+
+          <div className={styles.metric}>
+            <div className={styles.metricValue}>
+              <span className={styles.value}>₹</span><span className={styles.value}>
+                <Odometer to={1000} from={0} />
+                </span><span className={styles.label}>Cr +</span>
+            </div>
+              <p className={styles.description}>GMV managed by TruFlo</p>
+          </div>
+
+          <div className={styles.metric}>
+            <div className={styles.metricValue}>
+              <span className={styles.value}>
+                <Odometer to={79} from={0} />
+                </span><span className={styles.value}>%</span><span className={styles.label}>Avg.</span>
+            </div>
+              <p className={styles.description}>CAGR achieved for Brands</p>
+          </div>
         </motion.div>
 
         <div className={styles.brands}>

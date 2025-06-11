@@ -47,7 +47,7 @@ function Hero() {
                         </div>
 
 
-                            <div className={styles.heroBtns}>
+                            <div className={`${styles.heroBtns} highlight`}>
                                 <motion.p
                                     variants={fadeBlur}
                                     transition={transitionFade}
@@ -57,18 +57,18 @@ function Hero() {
                                     variants={fadeBlur}
                                     transition={transitionFade}
                                 >
-                                    <Link href="#" className={styles.primeBtn}>Talk to us <span>→</span><div>
+                                    <Link href="#leadForm" className={styles.primeBtn}>Talk to us <span>→</span><div>
                                             {/* <Image src="/assets/arrow.png" alt="Arrow" width={20} height={20} /> */}
                                         </div></Link>
-                                    <Link href="#" className={styles.greyBtn}>Explore our offerings</Link>
+                                    <Link href="#services" className={styles.greyBtn}>Explore our offerings</Link>
                                 </motion.div>
                             </div>
 
                     </motion.div>
 
                     <div className={styles.heroVid}>
-                        <div className={`${styles.vidBox} rollingBorderGrad roundedFull`} onClick={openVideo} style={{'--border-radius': '12px'}}>
-                            <div className={styles.videoThumbnail}>
+                        <div className={`${styles.vidBox}`} onClick={openVideo} style={{'--border-radius': '12px'}}>
+                            <div className={`${styles.videoThumbnail} gradBorderLt`}>
                                 <Image
                                     src={`https://img.youtube.com/vi/${youtubeVideoId}/maxresdefault.jpg`}
                                     width={800}
@@ -97,7 +97,7 @@ function Hero() {
                 </div>
             </section>
 
-            {/* Video Popup Overlay */}
+
             {isVideoOpen && (
                 <div className={styles.videoOverlay} onClick={handleOverlayClick}>
                     <div className={styles.videoContainer}>

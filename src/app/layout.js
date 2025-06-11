@@ -1,6 +1,8 @@
 import { Inter, Poppins } from "next/font/google";
 import "./globals.css";
 
+import Chat from "./components/UI/Button/Chat";
+
 const fontPrime = Inter({
   variable: "--font-prime",
   subsets: ["latin"],
@@ -18,6 +20,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${fontPrime.variable} font-sans`}>
         {children}
+        <Chat href="#leadForm" ariaLabel="Open chat" />
       </body>
     </html>
   );

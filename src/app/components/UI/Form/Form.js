@@ -2,6 +2,8 @@
 import { useState } from "react";
 import styles from "./styles.module.css";
 
+import { useSearchParams } from "next/navigation";
+
 function Form({
   inputs = [
     {
@@ -46,6 +48,18 @@ function Form({
   ],
   ...props
 }) {
+
+  const querry = useSearchParams();
+
+  const source = querry.get("utm_source") || "direct";
+
+  const medium = querry.get("utm_medium") || "lead_form";
+
+  const campaign = querry.get("utm_campaign") || "direct";
+
+
+
+
   // Initialize form state with empty values for each input
   const initialFormData = inputs.reduce((acc, input) => {
     acc[input.name] = "";
@@ -67,7 +81,7 @@ function Form({
       const response = await fetch("/api/lead", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({...formData, source, medium, campaign}),
       });
       const data = await response.json();
       if (response.ok) {

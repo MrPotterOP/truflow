@@ -10,6 +10,9 @@ const formSchema = z.object({
   number: z.string().min(10, "Phone number is too short").max(20, "Phone number is too long"),
   company: z.string().min(2, "Company name is too short").max(100, "Company name is too long"),
   designation: z.string().min(2, "Designation is too short").max(100, "Designation is too long"),
+  source: z.string(),
+  campaign: z.string(),
+  medium: z.string(),
 });
 
 // Initialize rate limiter: 10 requests per minute per IP
@@ -30,8 +33,10 @@ export async function POST(request) {
 
     // Parse and validate form data
     const body = await request.json();
-    
+    console.log(body, "body");
     const validatedData = formSchema.parse(body);
+
+    console.log(validatedData, "validatedData");
 
     // Send data to Freshsales API
     const response = await fetch(`https://${process.env.FRESHSALES_DOMAIN}/api/contacts`, {
@@ -49,7 +54,10 @@ export async function POST(request) {
           job_title: validatedData.designation,
           custom_field: {
             "cf_company_name": validatedData.company,
-          }
+          },
+          last_source: validatedData.source,
+          last_campaign: validatedData.campaign,
+          last_medium: validatedData.medium
         }
       }),
     });

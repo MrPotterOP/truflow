@@ -147,7 +147,7 @@
 
     .productTitle h3 {
         font-size: var(--fs-h4);
-        font-weight: 700;
+        font-weight: 300;
     }
 
     .productTitle h3 span {
@@ -157,6 +157,7 @@
 
         background-clip: none;
         color: var(--clr-prime);
+        font-weight: 700;
     }
 
     .productTitle p {
@@ -177,10 +178,15 @@
         /* border: .5px solid var(--clr-grey-drk); */
         max-width: 700px;
         gap: 24px;
+
+        background: linear-gradient(90deg, #F8F8F8 0%, rgba(248, 248, 248, 0) 100%) padding-box,
+              linear-gradient(270deg, rgba(217, 217, 217, 0) 0%, #D9D9D9 100%) border-box;
+        border: 2px solid transparent;
     }
 
+
     .prodFeature {
-        background: var(--clr-white);
+        background: transparent;
         padding: 24px;
         border-radius: 16px;
         border: none;

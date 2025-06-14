@@ -1,4 +1,3 @@
-
 .milestone {
   background: var(--gl-blue);
   padding: 80px 0 60px 0;
@@ -106,6 +105,10 @@
   margin-right: 10px;
 }
 
+.cent {
+  margin: 0 10px 0 -2px;
+}
+
 /* Tablet styles */
 @media (min-width: 768px) {
   .milestone {
@@ -141,11 +144,11 @@
   }
 
   .value {
-    font-size: var(--fs-p2);
+    font-size: var(--fs-p1);
   }
 
   .label {
-    font-size: var(--fs-p2);
+    font-size: var(--fs-p1);
   }
 
   .description {
@@ -183,35 +186,40 @@
     font-size: var(--fs-h4);
   }
 
-  /* Desktop layout - horizontal */
+  /* Desktop layout - 2x3 grid */
   .metrics {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 24px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 100px 80px;
     margin-bottom: 100px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .metric {
-    flex: 1;
+    flex: none;
     text-align: center;
     align-items: center;
-    padding: 0 8px;
+    padding: 0 30px;
     position: relative;
   }
 
-  /* Add subtle dividers between metrics on desktop */
-  .metric:not(:last-child)::after {
+
+  /* Single horizontal line between rows */
+  .metric:nth-child(2)::after {
     content: '';
     position: absolute;
-    right: -12px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 1px;
-    height: 60px;
-    background: var(--clr-grey-lt);
+    bottom: -46px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100vw - 100px);
+    max-width: 1200px;
+    height: 1px;
+    background: var(--clr-grey);
   }
+
 
   .description::after {
     display: none;
@@ -222,7 +230,7 @@
   }
 
   .label {
-    font-size: var(--fs-p2);
+    font-size: var(--fs-p1);
   }
 
   .brands {
@@ -231,7 +239,7 @@
   }
 
   .brandBox {
-    gap: 44px !important;
+    gap: 58px !important;
   }
 
   .logoPlaceholder img{

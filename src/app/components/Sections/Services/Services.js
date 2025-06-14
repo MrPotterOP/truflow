@@ -17,26 +17,26 @@ const Services = () => {
       subtitle: 'For fast-moving brands',
       description: 'Plug-and-play dashboards, RCA workflows, and alerts. Perfect for brands that need instant visibility and actionable insights, without complex setup.',
       cards: [
-        {
-          title: 'Cloud Solutions',
-          description: 'Scalable cloud-based software solutions designed for enterprise needs.',
-          cta: 'Get in touch'
-        },
-        {
-          title: 'Integration Services',
-          description: 'Seamless integration with your existing systems and workflows.',
-          cta: 'Get in touch'
-        },
-        {
-          title: 'Support & Maintenance',
-          description: '24/7 support and continuous maintenance for optimal performance.',
-          cta: 'Get in touch'
-        },
-        {
-          title: 'Security Solutions',
-          description: 'Enterprise-grade security measures to protect your data and operations.',
-          cta: 'Get in touch'
-        }
+        // {
+        //   title: 'Cloud Solutions',
+        //   description: 'Scalable cloud-based software solutions designed for enterprise needs.',
+        //   cta: 'Get in touch'
+        // },
+        // {
+        //   title: 'Integration Services',
+        //   description: 'Seamless integration with your existing systems and workflows.',
+        //   cta: 'Get in touch'
+        // },
+        // {
+        //   title: 'Support & Maintenance',
+        //   description: '24/7 support and continuous maintenance for optimal performance.',
+        //   cta: 'Get in touch'
+        // },
+        // {
+        //   title: 'Security Solutions',
+        //   description: 'Enterprise-grade security measures to protect your data and operations.',
+        //   cta: 'Get in touch'
+        // }
       ]
     },
     {
@@ -46,26 +46,26 @@ const Services = () => {
       subtitle: 'For system integrators and consultants',
       description: "Build client-facing solutions on top of TruFlo's platform. Perfect for system integrators and consultants who want to offer revenue intelligence to their clients.",
       cards: [
-        {
-          title: 'Development Tools',
-          description: 'Comprehensive development environment with all necessary tools and frameworks.',
-          cta: 'Get in touch'
-        },
-        {
-          title: 'Deployment Pipeline',
-          description: 'Automated deployment pipeline for faster time-to-market.',
-          cta: 'Get in touch'
-        },
-        {
-          title: 'Scaling Solutions',
-          description: 'Auto-scaling infrastructure that grows with your application needs.',
-          cta: 'Get in touch'
-        },
-        {
-          title: 'API Management',
-          description: 'Complete API lifecycle management and integration capabilities.',
-          cta: 'Get in touch'
-        }
+        // {
+        //   title: 'Development Tools',
+        //   description: 'Comprehensive development environment with all necessary tools and frameworks.',
+        //   cta: 'Get in touch'
+        // },
+        // {
+        //   title: 'Deployment Pipeline',
+        //   description: 'Automated deployment pipeline for faster time-to-market.',
+        //   cta: 'Get in touch'
+        // },
+        // {
+        //   title: 'Scaling Solutions',
+        //   description: 'Auto-scaling infrastructure that grows with your application needs.',
+        //   cta: 'Get in touch'
+        // },
+        // {
+        //   title: 'API Management',
+        //   description: 'Complete API lifecycle management and integration capabilities.',
+        //   cta: 'Get in touch'
+        // }
       ]
     },
     {
@@ -75,26 +75,26 @@ const Services = () => {
       subtitle: 'For your BI team',
       description: "Sync TruFlo's unified data into your internal analytics stack using APIs and warehouse connectors. No platform shift required.",
       cards: [
-        {
-          title: 'Data Analytics',
-          description: 'Advanced analytics and business intelligence solutions for data-driven decisions.',
-          cta: 'Get in touch'
-        },
-        {
-          title: 'Data Integration',
-          description: 'Seamless integration of data from multiple sources and formats.',
-          cta: 'Get in touch'
-        },
-        {
-          title: 'Machine Learning',
-          description: 'AI and ML solutions to extract predictive insights from your data.',
-          cta: 'Get in touch'
-        },
-        {
-          title: 'Data Governance',
-          description: 'Complete data governance and compliance management solutions.',
-          cta: 'Get in touch'
-        }
+        // {
+        //   title: 'Data Analytics',
+        //   description: 'Advanced analytics and business intelligence solutions for data-driven decisions.',
+        //   cta: 'Get in touch'
+        // },
+        // {
+        //   title: 'Data Integration',
+        //   description: 'Seamless integration of data from multiple sources and formats.',
+        //   cta: 'Get in touch'
+        // },
+        // {
+        //   title: 'Machine Learning',
+        //   description: 'AI and ML solutions to extract predictive insights from your data.',
+        //   cta: 'Get in touch'
+        // },
+        // {
+        //   title: 'Data Governance',
+        //   description: 'Complete data governance and compliance management solutions.',
+        //   cta: 'Get in touch'
+        // }
       ]
     },
     {

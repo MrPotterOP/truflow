@@ -14,22 +14,22 @@ function Catagories() {
         {
             title: "Enterprises",
             description: "Multi-brand, multi-BU orgs with complex ERPs and internal data silos",
-            icon: "/assets/cat1.png",
+            icon: "/assets/cat2.png",
         },
         {
             title: "System Integrators & Consultants",
             description: "D2C, FMCG, Electronics, Fashion, Personal Care",
-            icon: "/assets/cat1.png",
+            icon: "/assets/cat3.png",
         },
         {
             title: "ISVs & Platforms",
             description: "Embed intelligence in Shopify, Magento, Unicommerce, etc.",
-            icon: "/assets/cat1.png",
+            icon: "/assets/cat4.png",
         },
         {
             title: "Marketing & Media Agencies",
             description: "Track blended ROAS, TACoS, and multi-platform efficiency in one place",
-            icon: "/assets/cat1.png",
+            icon: "/assets/cat5.png",
         }
     ];
 

@@ -49,13 +49,29 @@ function Form({
   ...props
 }) {
 
+  //get date in DDMMMYY
+
+  const months = ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"];
+
+  const dd = new Date().getDate();
+  const mm = months[new Date().getMonth()];
+  const yyyy = new Date().getFullYear();
+
+
+
+
+  const today = dd + mm + (yyyy - 2000);
+  
+
+
+
   const querry = useSearchParams();
 
   const source = querry.get("utm_source") || "direct";
 
   const medium = querry.get("utm_medium") || "lead_form";
 
-  const campaign = querry.get("utm_campaign") || "direct";
+  const campaign = querry.get("utm_campaign") || "truflo_onepager_website_" + today;
 
 
 

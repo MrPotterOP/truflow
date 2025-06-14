@@ -39,11 +39,11 @@ function Footer() {
     const offices = [
 
         {
-            name: 'Pune Center :',
+            name: 'Pune :',
             address: 'The NextGen Avenue, Wing B, 12th Floor. Bahiratwadi, Shivaji Nagar, Senapati Bapat Road, Pune, Maharashtra - 411016',
         },
         {
-            name: 'Bengaluru Center :',
+            name: 'Bengaluru :',
             address: '14th Floor, Skav 909, Lavelle road, Bengaluru, Karnataka - 560001',
         }
     ]

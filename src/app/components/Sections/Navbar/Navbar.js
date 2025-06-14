@@ -41,7 +41,7 @@ function Navbar() {
                         </div>
 
                         <div className={styles.ctaBox}>
-                            <Link href="#leadForm" className={styles.txtBtn}>Login</Link>
+                            <Link href="https://www.amplicommacp.com/" target='_blank' rel="noopener noreferrer" className={styles.txtBtn}>Login</Link>
                             <Link href="#leadForm" className={styles.roundBtn}>Contact Us</Link>
                         </div>
                         <div className={styles.xBox} onClick={toggleMenu}>

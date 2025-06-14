@@ -55,7 +55,7 @@
         gap: 12px;
         flex-wrap: wrap;
         background: #B0B0B00D;
-        padding: 20px 38px 30px 25px;
+        padding: 20px 30px 30px 22px;
         border-radius: 16px;
         border: 1px solid var(--clr-grey-drk);
     }
@@ -64,7 +64,7 @@
         padding: 12px;
         border-radius: 8px;
         cursor: pointer;
-        color: var(--clr-grey);
+        color: #00000074;
     }
 
     .intNavItem:hover {

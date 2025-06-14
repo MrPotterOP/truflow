@@ -120,9 +120,9 @@ const Milestone = () => {
             <div className={styles.metricValue}>
               <span className={styles.value}>
                 <Odometer to={40} from={10} />
-                </span><span className={`${styles.label} ${styles.mLeft}`}>%</span><span className={styles.value}>    
+                </span><span className={`${styles.label} ${styles.cent} `}>%</span><span className={styles.value}>    
                   <Odometer to={95} from={0} />
-                  </span><span className={styles.label}>%</span>
+                  </span><span className={`${styles.label} ${styles.cent} `}>%</span>
             </div>
               <p className={styles.description}>Inventory fill rate <br />optimization</p>
           </div>

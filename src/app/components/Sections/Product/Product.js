@@ -44,7 +44,7 @@ function Product() {
                 </div>
 
                 <div className={styles.productContentBox}>
-                    <div className={`${styles.productContent} gradBorderFade`}>
+                    <div className={`${styles.productContent}`}>
                         {
                             products.map((prod, index) => {
                                 return (
@@ -78,7 +78,7 @@ function Product() {
                         transition={transitionFade}
                         variants={fadeBlur}
                         whileInView="visible"
-                        viewport={{ once: true, margin: "0px 0px -100px 0px" }}
+                        viewport={{ once: true, margin: "0px 0px -20px 0px" }}
 
                     >We&apos;re not just a dashboard. We&apos;re your revenue co-pilot.</motion.p>
                 </div>

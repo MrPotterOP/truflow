@@ -21,6 +21,8 @@
   --clr-body: #04182e;
   --clr-black: #000D1F;
 
+  --clr-alt: #C35608;
+
   /*        Gradients */
   --gl-d2l: linear-gradient(270deg, #FF780A 0%, #994806 100%);
   --gl-w2l: linear-gradient(90deg, #FFFFFF 0%, #FFC899 100%);
@@ -49,7 +51,7 @@ body {
 }
 
 html {
-  scroll-behavior: smooth;
+  scroll-behavior:auto;
   -webkit-font-smoothing: antialiased;
 }
 

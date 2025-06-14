@@ -79,42 +79,14 @@ const Milestone = () => {
           }}
           viewport={{ once: true }}
         >
-          <div className={styles.metric}>
-            <div className={styles.metricValue}>
-                <Odometer to={18} from={0} className={styles.value}/>
-              
-                <span className={styles.value}>x</span><span className={styles.label}>GMV</span>
-            </div>
-              <p className={styles.description}>For a leading cookware brand</p>
-          </div>
-
-          <div className={styles.metric}>
-            <div className={styles.metricValue}>
-
-                <Odometer to={4} from={0} className={styles.value} />
-                <span className={styles.value}>x</span><span className={styles.label}>ROAS</span>
-            </div>
-              <p className={styles.description}>For a legacy FMCG brand</p>
-          </div>
 
           <div className={styles.metric}>
             <div className={styles.metricValue}>
               <span className={styles.value}>
-                <Odometer to={40} from={10} />
-                </span><span className={styles.label}> % → </span><span className={styles.value}> 
-                  <Odometer to={95} from={0} />
-                  </span><span className={styles.label}>%</span>
+                <Odometer to={79} from={0} />
+                </span><span className={styles.value}>%</span><span className={styles.label}>Avg.</span>
             </div>
-              <p className={styles.description}>Inventory fill rate optimization</p>
-          </div>
-
-          <div className={styles.metric}>
-            <div className={styles.metricValue}>
-              <span className={styles.value}>
-                <Odometer to={4} from={0} />
-                </span><span className={styles.label}>Marketplaces</span>
-            </div>
-              <p className={styles.description}>Activated with revenue growth in 90 days</p>
+              <p className={styles.description}>CAGR achieved <br />for Brands</p>
           </div>
 
           <div className={styles.metric}>
@@ -123,16 +95,45 @@ const Milestone = () => {
                 <Odometer to={1000} from={0} />
                 </span><span className={styles.label}>Cr +</span>
             </div>
-              <p className={styles.description}>GMV managed by TruFlo</p>
+              <p className={styles.description}>GMV managed <br />by TruFlo</p>
+          </div>
+
+          <div className={styles.metric}>
+            <div className={styles.metricValue}>
+                <Odometer to={18} from={0} className={styles.value}/>
+              
+                <span className={styles.value}>x</span><span className={styles.label}>GMV</span>
+            </div>
+              <p className={styles.description}>For a leading <br />cookware brand</p>
+          </div>
+
+          <div className={styles.metric}>
+            <div className={styles.metricValue}>
+
+                <Odometer to={4} from={0} className={styles.value} />
+                <span className={styles.value}>x</span><span className={styles.label}>ROAS</span>
+            </div>
+              <p className={styles.description}>For a legacy <br />FMCG brand</p>
           </div>
 
           <div className={styles.metric}>
             <div className={styles.metricValue}>
               <span className={styles.value}>
-                <Odometer to={79} from={0} />
-                </span><span className={styles.value}>%</span><span className={styles.label}>Avg.</span>
+                <Odometer to={40} from={10} />
+                </span><span className={`${styles.label} ${styles.mLeft}`}>%</span><span className={styles.value}>    
+                  <Odometer to={95} from={0} />
+                  </span><span className={styles.label}>%</span>
             </div>
-              <p className={styles.description}>CAGR achieved for Brands</p>
+              <p className={styles.description}>Inventory fill rate <br />optimization</p>
+          </div>
+
+          <div className={styles.metric}>
+            <div className={styles.metricValue}>
+              <span className={styles.value}>
+                <Odometer to={4} from={0} />
+                </span><span className={styles.label}>Marketplaces</span>
+            </div>
+              <p className={styles.description}>Activated with revenue <br />growth in 90 days</p>
           </div>
         </motion.div>
 
@@ -142,7 +143,7 @@ const Milestone = () => {
               height="68px"
               speed={18}
               direction="left"
-              gap="60px"
+              gap="40px"
               pauseOnHover={true}
               className={styles.brandBox}
               imgClassName={styles.logoPlaceholder}

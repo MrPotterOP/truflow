@@ -80,10 +80,10 @@ export default function Home() {
 
             <ImagesScroll
                 imgs={imgs}
-                height="26px"
+                height="30px"
                 speed={60}
                 direction="left"
-                gap="40px"
+                gap="38px"
                 pauseOnHover={true}
                 className={styles.integrationsImgs}
             />

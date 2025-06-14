@@ -179,8 +179,8 @@
     }
 
     .navBox {
-        /* padding: 38px 200px; */
-        padding: 26px 100px;
+        padding: 26px 180px;
+        /* padding: 26px 250px; */
         flex-direction: row;
         justify-content: space-between;
         gap: 70px;
@@ -234,7 +234,7 @@
     .links a {
         font-size: var(--fs-p5);
         color: var(--clr-body);
-        font-weight: 500;
+        font-weight: 700;
     }
 
     .xBox {
@@ -249,12 +249,14 @@
     }
 
     .ctaBox .txtBtn {
-        font-size: var(--fs-p5);
+        font-size: var(--fs-p4);
         font-weight: 700;
+        padding: 0 4px;
     }
 
     .ctaBox .roundBtn {
-        font-size: var(--fs-p5);
+        font-size: var(--fs-p4);
         font-weight: 700;
+        padding: 12px 24px;
     }
 }

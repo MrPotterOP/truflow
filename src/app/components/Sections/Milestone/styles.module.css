@@ -1,4 +1,4 @@
-/* Mobile-first responsive design */
+
 .milestone {
   background: var(--gl-blue);
   padding: 80px 0 60px 0;
@@ -26,7 +26,7 @@
   font-size: var(--fs-h2);
 }
 
-/* Mobile layout - vertical stack */
+
 .metrics {
   display: flex;
   flex-direction: column;
@@ -42,8 +42,6 @@
   width: min-content;
   position: relative;
 }
-
-/* Adding a horizontal line after each metric */
 
 
 
@@ -73,6 +71,7 @@
 }
 
 .description {
+  margin-top: -10px;
   color: var(--clr-white);
   font-size: var(--fs-p3);
   line-height: 1.4;
@@ -81,8 +80,6 @@
   margin: 0 auto;
   position: relative;
 }
-
-/* Adding a horizontal line after each descriton on bottom and in center */
 
 .description::after {
   content: '';
@@ -105,7 +102,9 @@
 }
 
 
-
+.mLeft {
+  margin-right: 10px;
+}
 
 /* Tablet styles */
 @media (min-width: 768px) {
@@ -150,7 +149,8 @@
   }
 
   .description {
-    font-size: var(--fs-p4);
+    margin-top: -10px;
+    font-size: var(--fs-p5);
     max-width: fit-content;
     font-weight: 400;
   }
@@ -231,7 +231,7 @@
   }
 
   .brandBox {
-    gap: 140px !important;
+    gap: 44px !important;
   }
 
   .logoPlaceholder img{

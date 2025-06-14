@@ -150,11 +150,12 @@
     }
 
     .promoContent {
-        gap: 36px;
-        max-width: 920px;
+        gap: 24px;
+        max-width: 960px;
     }
 
     .promoTitle {
+        /* font-size: var(--fs-h4); */
         font-size: var(--fs-h4);
         font-weight: 700;
         -webkit-background-clip: none;
@@ -172,12 +173,12 @@
     }
 
     .promoTaglines {
-        gap: 36px;
+        gap: 24px;
     }
 
     .tagline {
         font-size: var(--fs-p1);
-        font-weight: 400;
+        font-weight: 300;
     }
 
     .tagline:last-child {
@@ -191,6 +192,7 @@
     }
 
     .btnPrime {
+        margin-top: calc(40px - 24px);
         font-size: var(--fs-p3);
         font-weight: 700;
 

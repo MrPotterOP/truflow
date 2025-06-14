@@ -38,7 +38,8 @@
 
     .catTitle {
         max-width: 100%;
-        font-size: var(--fs-h3);
+        font-size: 38px;
+        font-weight: 300;
     }
 
     .catTitle span {
@@ -47,6 +48,9 @@
 
         background-clip: none;
         color: var(--clr-prime);
+
+        font-size: var(--fs-h4);
+        font-weight: 700;
     }
 
     /* .catBox {
@@ -66,6 +70,8 @@
             "itm1 itm1 itm2 itm2 itm3 itm3"
             ".  itm4 itm4 itm5 itm5 .";
         ;
+        row-gap: 100px;
+        column-gap: 38px;
     }
 
     .catBox .catCard:nth-child(1) {

@@ -64,23 +64,23 @@
     }
 
     .iconBox {
-        width: 102px;
-        height: 102px;
+        width: 90px;
+        height: 90px;
         margin: -82px auto 20px auto;
     }
 
     .icon {
-        width: 48px;
-        height: 48px;
+        width: 40px;
+        height: 40px;
     }
 
     .icon img {
-        width: 24px;
-        height: 24px;
+        width: 22px;
+        height: 22px;
     }
 
     .catagoryTitle {
-        font-size: var(--fs-h6);
+        font-size: var(--fs-p2);
         font-weight: 700;
 
         background: transparent;
@@ -92,10 +92,10 @@
     }
 
     .catagoryDescription {
-        font-size: var(--fs-p6);
+        font-size: var(--fs-p5);
         font-weight: 400;
         color: var(--clr-grey);
-        max-width: 240px;
+        max-width: 290px;
         margin: 0 auto;
     }
 }

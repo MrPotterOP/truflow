@@ -173,8 +173,8 @@
     .productContent {
         padding: 24px 20px;
         border-radius: 30px;
-        /* background: var(--gl-fade-lt);
-        border: .5px solid var(--clr-grey-drk); */
+        background: var(--gl-fade-lt);
+        /* border: .5px solid var(--clr-grey-drk); */
         max-width: 700px;
         gap: 24px;
     }
@@ -183,7 +183,7 @@
         background: var(--clr-white);
         padding: 24px;
         border-radius: 16px;
-        border: 1px solid var(--clr-grey-drk);
+        border: none;
         cursor: pointer;
         height: fit-content;
     }
@@ -267,7 +267,7 @@
     .prodTagline {
         max-width: 100%;
         text-align: left;
-        margin: 0 0 0 40px;
+        margin: 0 0 0 32px;
         padding: 22px;
     }
 

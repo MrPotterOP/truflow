@@ -19,6 +19,7 @@ import styles from './page.module.css';
 import ImagesScroll from "./components/UI/ImgsScroll/ImagesScroll";
 
 
+import { Suspense } from "react";
 
 export default function Home() {
 
@@ -122,7 +123,9 @@ export default function Home() {
       <Features />
       <Integrations />
       <ISO />
-      <LeadForm />
+      <Suspense fallback={<div>Loading...</div>}>
+        <LeadForm />
+      </Suspense>
       <Footer />
     </main>
   );

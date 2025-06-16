@@ -10,7 +10,7 @@ function Footer() {
     const socials = [
         {
             name: 'Instagram',
-            href: '#',
+            href: 'https://www.instagram.com/truflo.ai/',
             icon: '/assets/logos/instagram.png'
         },
         {
@@ -20,17 +20,17 @@ function Footer() {
         },
         {
             name: 'Linkedin',
-            href: '#',
+            href: 'https://www.linkedin.com/company/truflointelligence/',
             icon: '/assets/logos/linkedin.png'
         },
         {
             name: 'Facebook',
-            href: '#',
+            href: 'https://www.facebook.com/truflo.intelligence/',
             icon: '/assets/logos/fb.png'
         },
         {
             name: 'Twitter',
-            href: '#',
+            href: 'https://x.com/TruFlo_Ai',
             icon: '/assets/logos/x.png'
         }
         

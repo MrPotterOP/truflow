@@ -12,7 +12,7 @@ function LeadForm() {
                     Want to stop guessing and start growing?
                 </h4>
                 <p className={styles.formDesc}>
-                    Let&apos;s show you what revenue clarity looks like — and how it drives growth.
+                    Let&apos;s show you what revenue clarity looks like and how it drives growth.
                 </p>
             </div>
 

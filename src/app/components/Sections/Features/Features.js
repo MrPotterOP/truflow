@@ -14,7 +14,7 @@ function Features() {
             description: "Track GMV, ROAS, AOV, TACoS across all your channels",
         },
         {
-            title: "RCA engine",
+            title: "Root Cause Analysis engine",
             description: "See why metrics are changing with automated root cause analysis",
         },
         {

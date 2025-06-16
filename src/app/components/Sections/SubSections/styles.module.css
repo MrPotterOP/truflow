@@ -145,7 +145,7 @@
         left: calc(50% - 1000px / 2);
         height: .5px;
         width: 1000px;
-        z-index: 9999;
+        z-index: 1;
         background: var(--clr-grey-drk);
     }
 

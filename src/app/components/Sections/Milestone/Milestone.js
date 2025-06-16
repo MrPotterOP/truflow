@@ -93,9 +93,9 @@ const Milestone = () => {
             <div className={styles.metricValue}>
               <span className={styles.value}>₹</span><span className={styles.value}>
                 <Odometer to={1000} from={0} />
-                </span><span className={styles.label}>Cr +</span>
+                </span><span className={styles.label}>Cr+</span>
             </div>
-              <p className={styles.description}>GMV managed <br />by TruFlo</p>
+              <p className={styles.description}>GMV managed </p>
           </div>
 
           <div className={styles.metric}>
@@ -120,8 +120,8 @@ const Milestone = () => {
             <div className={styles.metricValue}>
               <span className={styles.value}>
                 <Odometer to={40} from={10} />
-                </span><span className={`${styles.label} ${styles.cent} `}>%</span><span className={styles.value}>    
-                  <Odometer to={95} from={0} />
+                </span><span className={`${styles.label} ${styles.cent} `}>% →</span><span className={styles.value}>    
+                  <Odometer to={95} from={0} /> 
                   </span><span className={`${styles.label} ${styles.cent} `}>%</span>
             </div>
               <p className={styles.description}>Inventory fill rate <br />optimization</p>

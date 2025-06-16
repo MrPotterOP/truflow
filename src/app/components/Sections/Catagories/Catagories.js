@@ -18,11 +18,11 @@ function Catagories() {
         },
         {
             title: "System Integrators & Consultants",
-            description: "D2C, FMCG, Electronics, Fashion, Personal Care",
+            description: "Deliver digital Go-To-Market & analytics for your clients using TruFol as a platform",
             icon: "/assets/cat3.png",
         },
         {
-            title: "ISVs & Platforms",
+            title: "Independent Software Vendors & Platforms",
             description: "Embed intelligence in Shopify, Magento, Unicommerce, etc.",
             icon: "/assets/cat4.png",
         },

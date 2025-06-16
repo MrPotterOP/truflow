@@ -33,7 +33,7 @@ function Navbar() {
 
                     <div className={styles.linksBox}>
                         <div className={styles.links}>
-                            <Link href="#product">Products</Link>
+                            <Link href="#process">Products</Link>
                             <Link href="#services">Offerings</Link>
                             <Link href="#features">Features</Link>
                             <Link href="#integrations">Connectors</Link>

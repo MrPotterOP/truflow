@@ -240,6 +240,9 @@
         width: 100%;
         display: block;
         object-fit: cover;
+
+        filter: drop-shadow(17px 21px 40px rgba(236, 114, 14, 0.203));
+
     }
 
     .prodDisplayDynamic {
@@ -258,15 +261,19 @@
     }
 
     .prodDisplayDynamic .prodDisplayDynamicBox:nth-child(2) {
-        max-height: 650px;
+        max-height: 200px;
     }
 
     .prodDisplayDynamicBox img {
-        height: 100%;
         width: 100%;
         display: block;
         object-fit: cover;
+        max-height: 540px;
     }
+
+    /* .prodDisplayDynamic .prodDisplayDynamicBox:nth-child(2) img {
+        max-height: 200px;
+    } */
 
 
 

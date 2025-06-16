@@ -18,11 +18,11 @@ function Catagories() {
         },
         {
             title: "System Integrators & Consultants",
-            description: "Deliver digital Go-To-Market & analytics for your clients using TruFol as a platform",
+            description: "Deliver digital Go-To-Market & analytics for your clients using TruFlo as a platform",
             icon: "/assets/cat3.png",
         },
         {
-            title: "Independent Software Vendors & Platforms",
+            title: "Independent Software Vendors",
             description: "Embed intelligence in Shopify, Magento, Unicommerce, etc.",
             icon: "/assets/cat4.png",
         },

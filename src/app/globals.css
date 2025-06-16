@@ -21,7 +21,8 @@
   --clr-body: #04182e;
   --clr-black: #000D1F;
 
-  --clr-alt: #C35608;
+  /* --clr-alt: #C35608; */
+  --clr-alt: #e7660b;
 
   /*        Gradients */
   --gl-d2l: linear-gradient(270deg, #FF780A 0%, #994806 100%);

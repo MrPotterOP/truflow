@@ -228,6 +228,7 @@
         margin: 100px 0 0 0;
         text-align: left;
         position: relative;
+        padding: 48px;
     }
 
     .heroBox {
@@ -274,6 +275,10 @@
         gap: 22px;
         padding: 20px 20px 26px 20px;
         margin: 0;
+        flex-wrap: nowrap;
+        flex-shrink: 0;
+
+        margin: 20px 0 0 0;
     }
 
 

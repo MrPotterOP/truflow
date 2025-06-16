@@ -95,7 +95,8 @@
         font-size: var(--fs-p5);
         font-weight: 400;
         color: var(--clr-grey);
-        max-width: 290px;
+        /* max-width: 290px; */
+        max-width: 318px;
         margin: 0 auto;
     }
 }

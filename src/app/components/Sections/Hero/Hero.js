@@ -42,7 +42,7 @@ function Hero() {
                                 Grow your business with <br /> <span>Omnichannel Insights</span>
                             </h1>
                             <p className={styles.heroDesc}>
-                                Unlock all your data across internal systems, marketplaces, D2C and partner networks (supply chain, logistics, trade) to serve your customer in <span>real time</span> and at <span>enterprise scale.</span>
+                                Unlock all your data across internal systems, marketplaces, D2C and partner networks (supply chain, logistics, trade) to serve your customer in <span>Real time</span> and at <span>Enterprise scale.</span>
                             </p>
                         </div>
 

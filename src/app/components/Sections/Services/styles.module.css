@@ -93,7 +93,8 @@
 .serviceDescription {
   font-size: var(--fs-p3);
   line-height: 1.6;
-  color: var(--clr-body);
+  /* color: var(--clr-body); */
+  color: var(--clr-grey);
   font-weight: 500;
 }
 

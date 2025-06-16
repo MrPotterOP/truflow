@@ -176,15 +176,18 @@
         position: sticky;
         top: 0;
         z-index: 10;
+        background-color: var(--clr-grey-lt);
     }
 
     .navBox {
-        padding: 26px 180px;
+        /* padding: 26px 180px; */
         /* padding: 26px 250px; */
         flex-direction: row;
         justify-content: space-between;
         gap: 70px;
         background-color: var(--clr-grey-lt);
+        width: 1352px;
+        padding: 26px 48px;
     }
 
     .navLogo {

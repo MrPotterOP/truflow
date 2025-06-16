@@ -102,7 +102,7 @@ const Services = () => {
       name: 'Outcome-as-a-Service',
       title: 'Outcome-as-a-Service (OaaS)',
       subtitle: 'Fully managed execution',
-      description: "We run your performance marketing, marketplaces, and GTM ops end-to-end. So your team can focus on strategy, not operations.",
+      description: "We run your performance marketing, marketplaces, and GTM operations end-to-end. So your team can focus on strategy, not operations.",
       cards: [
         {
           title: 'Commerce & Marketing Strategy',

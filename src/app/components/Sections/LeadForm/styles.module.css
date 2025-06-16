@@ -55,6 +55,7 @@
 
     .formDesc {
         font-size: var(--fs-p3);
+        font-weight: 400;
     }
 
 

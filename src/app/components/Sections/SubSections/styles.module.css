@@ -52,7 +52,7 @@
 .promoDesc {
     color: var(--clr-grey);
     font-size: var(--fs-p4);
-    font-weight: 700;
+    font-weight: 400;
 }
 
 .promoTaglines {

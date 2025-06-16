@@ -1,4 +1,4 @@
-import { Inter, Poppins } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 
 import Chat from "./components/UI/Button/Chat";
@@ -12,7 +12,7 @@ const fontPrime = Inter({
 
 export const metadata = {
   title: "Truflo | Home",
-  description: "Truflo Intelligence",
+  description: "Unify fragmented commerce data in real time with TruFlo. Unlock actionable insights to drive performance and enable profitable omnichannel growth.",
 };
 
 export default function RootLayout({ children }) {
@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${fontPrime.variable} font-sans`}>
         {children}
-        <Chat href="#leadForm" ariaLabel="Open chat" />
+        <Chat href="#leadForm" ariaLabel="Open chat" bottom="84px" />
       </body>
     </html>
   );

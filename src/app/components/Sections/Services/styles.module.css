@@ -98,6 +98,10 @@
   font-weight: 500;
 }
 
+.serviceDescriptionDesk{
+  display: none;
+}
+
 .talkButton {
   background: var(--gl-d2l);
   color: var(--clr-white);
@@ -268,7 +272,8 @@
     align-items: flex-start;
     text-align: left;
     gap: 40px;
-    margin-bottom: 36px;
+    /* margin-bottom: 36px; */
+    margin-bottom: 0;
   }
 
   .serviceTitle {
@@ -282,9 +287,17 @@
     margin-bottom: 38px;
   }
 
-  .serviceDescription {
+  .serviceDescription{
+    display: none;
+  }
+
+  .serviceDescriptionDesk {
+    display: block;
     font-size: var(--fs-p3);
     font-weight: 400;
+    color: var(--clr-grey);
+
+    margin-bottom: 36px;
   }
 
   .talkButton {

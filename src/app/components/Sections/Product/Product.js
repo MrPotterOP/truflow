@@ -65,7 +65,7 @@ function Product() {
                         <div className={styles.prodDisplayDynamic}>
                             <AnimatePresence>
                                 <motion.div className={styles.prodDisplayDynamicBox} key={product.img} initial={{ opacity: 0, scale: 0.5 }} animate={{ opacity: 1, scale: 1 }}>
-                                    <Image src={product.img} alt="product" width={900} height={900} />
+                                    <Image src={product.img} alt="product" width={600} height={800} priority />
                                 </motion.div>
                             </AnimatePresence>
                         </div>

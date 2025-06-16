@@ -14,6 +14,7 @@
     flex-direction: column;
     align-items: center;
     gap: 36px;
+    overflow: hidden;
 }
 
 .productTitle {
@@ -47,7 +48,7 @@
 
 .productTitle p {
     font-size: var(--fs-p3);
-    font-weight: 700;
+    font-weight: 400;
     color: var(--clr-grey);
 }
 
@@ -143,6 +144,7 @@
     .productTitle {
         gap: 24px;
         max-width: 660px;
+        padding: 0 22px;
     }
 
     .productTitle h3 {

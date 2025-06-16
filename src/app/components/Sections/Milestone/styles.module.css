@@ -72,9 +72,9 @@
 .description {
   margin-top: -10px;
   color: var(--clr-white);
-  font-size: var(--fs-p3);
+  font-size: 18px;
   line-height: 1.4;
-  font-weight: 700;
+  font-weight: 400;
   max-width: 100%;
   margin: 0 auto;
   position: relative;

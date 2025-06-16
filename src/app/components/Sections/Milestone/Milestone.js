@@ -5,7 +5,6 @@ import styles from './styles.module.css';
 import ImagesScroll from '../../UI/ImgsScroll/ImagesScroll';
 
 import { motion } from 'framer-motion';
-import { fadeBlur, transitionFade } from '../../../animations';
 
 import Odometer from '../../UI/Odometer/Odometer';
 
@@ -62,6 +61,8 @@ const Milestone = () => {
     "/assets/logos/image 19.png",
     "/assets/logos/image 20.png",
     "/assets/logos/image 21.png",
+    "/assets/logos/image 22.png",
+    "/assets/logos/image 23.png",
   ];
 
   return (
@@ -141,7 +142,7 @@ const Milestone = () => {
             <ImagesScroll
               imgs={brands}
               height="68px"
-              speed={18}
+              speed={20}
               direction="left"
               gap="40px"
               pauseOnHover={true}

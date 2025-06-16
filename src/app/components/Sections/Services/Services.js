@@ -166,6 +166,8 @@ const Services = () => {
               <Link className={styles.talkButton} href="#leadForm">Talk to us</Link>
             </div>
 
+            <p className={styles.serviceDescriptionDesk}>{currentService.description}</p>
+
             <div className={`${styles.serviceCards} ${showLess ? styles.collapsed : ''}`}>
               {currentService.cards.map((card, index) => (
                 <div key={index} className={`${styles.serviceCard} gradBorderMix`} >

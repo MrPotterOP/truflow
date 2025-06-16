@@ -5,6 +5,8 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+
+    overflow: hidden;
 }
 
 .heroBox {
@@ -20,7 +22,9 @@
     flex-direction: column;
     /* gap: 36px; */
     gap: 30px;
-    max-width: 300px;
+    max-width: 320px;
+
+    
 }
 
 .heroTitle {
@@ -35,12 +39,13 @@
 
 .heroDesc {
     font-size: var(--fs-p4);
-    font-weight: 700;
+    font-weight: 400;
     color: var(--clr-grey);
 }
 
 .heroDesc span {
     color: var(--clr-prime);
+    font-weight: 600;
 }
 
 .heroBtns {
@@ -54,7 +59,7 @@
 
 .heroBtns p {
     font-size: var(--fs-p3);
-    font-weight: 700;
+    font-weight: 400;
 }
 
 .btnBox {
@@ -228,7 +233,7 @@
         margin: 100px 0 0 0;
         text-align: left;
         position: relative;
-        padding: 48px;
+        padding: 0 48px;
     }
 
     .heroBox {
@@ -241,6 +246,7 @@
         /* gap: 36px; */
         gap: 28px;
         max-width: 554px;
+        overflow: visible;
     }
 
     .heroTitle {

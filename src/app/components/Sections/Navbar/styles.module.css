@@ -13,6 +13,7 @@
     align-items: center;
     gap: 12px;
 }
+
 .navLogo {
     position: relative;
     display: flex;
@@ -40,7 +41,6 @@
     width: 168px;
     height: 38px;
     object-fit: contain;
-
     margin: 72px 0 28px 0;
     z-index: 1;
 }
@@ -51,8 +51,6 @@
     align-items: center;
     background-color: var(--clr-grey-lt);
     width: 100%;
-
-
     overflow: hidden;
 }
 
@@ -61,7 +59,6 @@
     display: grid;
     place-items: center;
     opacity: 1;
-
     transition: opacity 0.3s ease-in;
 }
 
@@ -75,7 +72,11 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    gap: 32px;
+    /* gap: 32px; */
+    max-height: 0;
+    overflow: hidden;
+
+    transition: max-height 0.5s ease-in-out;
 }
 
 .links {
@@ -124,11 +125,13 @@
     gap: 32px;
 }
 
+/* Fixed: Use opacity and visibility instead of display for smooth animations */
 .ctaBox, .xBox {
     max-height: 0;
     overflow: hidden;
-    display: none;
-    transition: max-height 0.5s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+    transition: max-height 0.5s ease-in-out, opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 }
 
 .ctaBox .txtBtn {
@@ -143,7 +146,6 @@
     background: var(--gl-d2l);
     padding: 12px 24px;
     border-radius: 200px;
-
     color: var(--clr-white);
 }
 
@@ -163,11 +165,21 @@
     max-height: 1200px; 
 }
 
+/* Fixed: Use opacity and visibility for smooth show/hide */
 .navMenu.active .ctaBox, .navMenu.active .xBox {
-    display: flex;
     max-height: 1200px;
+    opacity: 1;
+    visibility: visible;
 }
 
+.navMenu.active .linksBox {
+    max-height: 1200px;
+    /* gap: 32px; */
+}
+
+.navMenu.active .ctaBox {
+    margin: 32px 0;
+}
 
 @media (min-width: 1024px) {
     .navbar {
@@ -180,8 +192,6 @@
     }
 
     .navBox {
-        /* padding: 26px 180px; */
-        /* padding: 26px 250px; */
         flex-direction: row;
         justify-content: space-between;
         gap: 70px;
@@ -205,7 +215,6 @@
         margin: 0;
     }
 
-
     .navMenu {
         display: flex;
         flex-direction: row;
@@ -222,6 +231,7 @@
         flex-direction: row;
         justify-content: space-between;
         width: 100%;
+        max-height: 100%;
     }
 
     .links {
@@ -244,11 +254,14 @@
         display: none;
     }
 
+    /* Desktop: Reset to normal display behavior */
     .ctaBox {
         display: flex;
         align-items: center;
         gap: 32px;
         max-height: 400px;
+        opacity: 1;
+        visibility: visible;
     }
 
     .ctaBox .txtBtn {

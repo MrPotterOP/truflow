@@ -16,9 +16,9 @@ function Policy() {
       {
         "type": "orderedList",
         "items": [
-          "Amplicomm Solutions Private Limited (“Company”) or “we”/“us” recognize the importance of protecting the privacy of information provided by you. Your privacy is very important to us. This Privacy Policy (“the Policy”) outlines how the Company collects, uses, and protects the Personal Information (as defined below) in accordance with the applicable laws.",
-          "The Site is the services publicly available on the platform of the Company’s Platform™.",
-          "By using the Platform, you consent to the processing of your Personal Information in accordance with this Policy. The Company may change this Policy from time to time and any changes will be posted on the Platform. Your continued use of the Platform after such changes have been posted will constitute your consent to such changes. If you do not agree with the terms of this Policy, please do not provide any Personal Information to the Company. You may withdraw your consent at any time, by following the instructions provided in this Policy."
+          "Amplicomm Solutions Private Limited (“Company” or “us”) recognizes the importance of protecting the privacy of information provided to us. Your privacy is very important to us. This privacy policy (“Policy”) applies to your use of our software and the services related to it (“Services”) offered on the Company's website at [•] (“Site”). The Site and the Services jointly constitute to be the platform of the Company (“Platform”).",
+          "This Policy read with the Terms and Conditions describe our practices with respect to your use of our Platform.",
+          "Any words referred to in this document in the uppercase shall be deemed to have the meaning ascribed to it in the Terms and Conditions."
         ]
       }
     ]
@@ -30,9 +30,22 @@ function Policy() {
       {
         "type": "orderedList",
         "items": [
-          "The Information Technology (Reasonable Security Practices and Procedures and Sensitive Personal Data or Information) Rules, 2011 (“Rules”) specify the rules and regulations pertaining to “Personal Information” and “Sensitive Personal Data or Information” under the Information Technology Act, 2000. The Rules define “Personal Information” as any information that relates to a natural person, which either directly or indirectly, in combination with other information available or likely to be available with a body corporate, is capable of identifying such person such as name, address, contact number, email address, etc., and such other information may be disclosed from time to time as “Personal Information” in accordance with the IT Rules.",
-          "Personal Information may include the following: name, address, contact number, email address, date of birth, gender, financial information such as bank account or credit card or debit card or other payment instrument details, physical, physiological and mental health condition, medical records and history.",
-          "Sensitive Personal Data or Information includes the above clauses as provided to a body corporate for providing service, and any of the information received under above clauses by body corporate for processing, stored or processed under lawful contract or otherwise, being the force shall not be regarded as Sensitive Personal Data or Information for the purpose of the IT Act, 2000."
+          "The Information Technology (Reasonable Security Practices and Procedures and Sensitive Personal Data or Information) Rules, 2011 (“IT Rules”) specifies the rules and regulations pertaining to “Personal Information” and “Sensitive Personal Data or Information” in India:",
+          "Rule 2(i) of the IT Rules - “Personal Information'' shall mean any information that relates to a natural person, which either directly or indirectly, in combination with other information available or likely to be available with a body corporate, is capable of identifying such a person such as name, address, contact number, email address, etc. and such other information as may be classified from time to time as “Personal Information” in accordance with the IT Rules.",
+          {
+            "text": "Rule 3 of the IT Rules - “Sensitive Personal Data or Information” shall mean such personal information which consists of information relating to:",
+            "subItems": [
+                "Password;",
+                "Financial information such as bank account or credit card or debit card or other payment instrument details;",
+                "Physical, physiological and mental health condition;",
+                "Sexual orientation;",
+                "Medical records and history;",
+                "Biometric information;",
+                "Any detail relating to the above clauses as provided to a body corporate for providing service; and",
+                "Any of the information received under above clauses by a body corporate for processing, stored or processed under lawful contract or otherwise.",
+                "However, any information that is freely available or accessible in public domain or furnished under the Right to Information Act, 2005 or any other law for the time being in force shall not be regarded as Sensitive Personal Data or Information.",
+            ]
+          }
         ]
       }
     ]
@@ -44,19 +57,24 @@ function Policy() {
       {
         "type": "orderedList",
         "items": [
-          "The Company may collect the following information:",
           {
-            "text": "Personal Information such as your name, address, contact number, email address, date of birth, gender, financial information such as bank account or credit card or debit card or other payment instrument details, physical, physiological and mental health condition, medical records and history.",
+            "text": "The Company may collect the following information:",
             "subItems": [
-              "Full name and/or name of the entity you represent;",
-              "Contact details;",
-              "Demographic information;",
-              "Financial information such as bank account, payment instrument details, credit/debit card details;",
-              "Online information such as customer surveys and offers;",
-              "Any other information provided by you."
+                "Full name and/or name of the entity you represent;",
+                "Contact information including email address;",
+                "Postal address;",
+                "Company registration information;",
+                "Bank account details;",
+                "Login information including account number, password;",
+                "Social media account information;",
+                "Online information such as customer surveys and offers;",
+                "Documents for identity verification;",
+                "Other information relevant to customer surveys and / or offers.",
+                "Any other relevant information for providing effective Services",
             ]
-          },
-          "The Company shall not be liable for any deficiency in Services due to incomplete or inaccurate information provided by you."
+          }, 
+          
+          "The Company shall not be liable for any deficiencies in Services due to incomplete or inaccurate information provided by you."
         ]
       }
     ]
@@ -69,9 +87,17 @@ function Policy() {
         "type": "orderedList",
         "items": [
           "The Company uses your Personal Information to operate, provide, develop and improve the Platform.",
-          "Personal Information collected by us through the Platform may be used by the Company, its holding companies, subsidiaries and affiliates for various purposes, including but not limited to: facilitate e-commerce business strategy and execution, online brand building, website enhancement recommendations, marketplace listing and operations management, digital performance marketing, SEO, reporting and customized technology solutions that may be developed by it from time to time in order to provide its Services through the Platform; administer your account; process your orders; provide customer support; communicate with you about your orders, the Platform, Services, or the Company; improve the Platform, Services, or the Company; personalize your experience; enforce the terms of use; marketing and promotional offers; prevent fraud and other prohibited or illegal activities; and comply with applicable laws.",
-          "In addition to the above, the Company may use your Personal Information to provide functionality, analyze performance, fix errors, and improve the usability and effectiveness of the Services. The Company may also use your Personal Information to recommend features, products, or services that may be of interest to you, identify your preferences, and personalize your experience with the Company.",
-          "Advertising: The Company may use your Personal Information to display interest-based advertisements for features and Services that might be of interest to you."
+          "The Personal Information collected by and through the Platform may be used by the Company, its holding companies, subsidiaries and affiliates or other entities engaged in providing the Services.",
+          {
+            "text": "The Personal Information may be used for the following purposes:",
+            "subItems": [
+                "Provision of Services. The Company uses your Personal Information to build a comprehensive ecommerce strategy for you, to assist you in marketing and enhancement of your business or brand value online, to process payments, communicate with you about your requirements and promotional offers and to provide such other Services in relation thereto.",
+                "Provide, troubleshoot and improve the Services. The Company uses your Personal Information to provide functionality, analyze performance, fix errors, and improve the usability and effectiveness of the Services.",
+                "Comply with the applicable laws. In certain cases, the Company collects and uses your Personal Information to comply with the applicable laws. For instance, the Company collects from you information regarding place of establishment and bank account information for identity verification and other purposes.",
+                "Communicate with you. The Company uses your Personal Information to communicate with you in relation to Services via different channels (e.g. by phone, email, chat).",
+                "Advertising. The Company uses your Personal Information to display interest-based advertisements for features and Services that might be of interest to you."
+            ]
+          }
         ]
       }
     ]
@@ -84,7 +110,7 @@ function Policy() {
         "type": "orderedList",
         "items": [
           "By using the Platform, you consent to the processing of your Personal Information in accordance with the terms of this Policy.",
-          "You may withdraw your consent at any time by following the instructions provided in this Policy. If you withdraw your consent, the Company may not be able to provide you with certain Services. Aurob, Pune 411057, Maharashtra, India, being the Company, will process your Personal Information in accordance with this Policy and applicable laws."
+          "You may withdraw this consent at any time by notifying us at [•] or by writing to us at AmpliComm Solutions Private Limited, Plot No. 416, Sind Co-Op. Hsg. Society, Aundh, Pune 411007, Maharashtra, India. However, in case you withdraw your consent, the Company may, without prejudice to any other rights available with it, terminate your account and it shall not be liable for any consequences arising therefrom."
         ]
       }
     ]
@@ -96,9 +122,9 @@ function Policy() {
       {
         "type": "orderedList",
         "items": [
-          "The Company takes commercially reasonable steps to protect your Personal Information when it is transmitted from your computer to the Platform.",
-          "The Company has implemented appropriate physical, electronic, and managerial procedures to safeguard and secure your Personal Information from unauthorized access, use, alteration, disclosure, or destruction.",
-          "It is your responsibility to take special care while deciding what information is sent to us via email as email sent to us from the Platform might not be 100% secure."
+          "The Company takes commercially reasonable steps to protect your Personal Information when you transmit it from your computer to the Platform and protect such information from loss, misuse, unauthorized access, disclosure, alteration or destruction.",
+          "The Personal Information is stored on [•].",
+          "It is your responsibility to take special care while deciding what information is sent to us via email as emails sent to and from the Platform might not be 100% secure."
         ]
       }
     ]
@@ -110,7 +136,7 @@ function Policy() {
       {
         "type": "orderedList",
         "items": [
-          "You shall use the Platform for purposes that are consistent with the Services and you shall be bound by the Terms and Conditions."
+          "You shall not use the Platform for any purpose that is inconsistent with the Services and you shall be bound by the Terms and Conditions."
         ]
       }
     ]
@@ -122,14 +148,14 @@ function Policy() {
       {
         "type": "orderedList",
         "items": [
-          "The Company does not sell, share, or rent your Personal Information to third parties unless it has collected such information about you for the purpose of providing the Services.",
-          "The Company may share your Personal Information with third parties for marketing purposes and for the purpose of providing the Services as permitted by this Policy.",
-          "The Company may disclose your Personal Information to third parties if it is required to do so by law, or if the Company believes that such disclosure is necessary to comply with legal obligations, protect the rights, property, or safety of the Company, its customers, or the public.",
-          "The Company may share your Personal Information with its affiliates, subsidiaries, or third-party service providers to help us deliver, support, and improve the Services.",
-          "The Company may also disclose your Personal Information to third parties in connection with a merger, acquisition, or sale of all or substantially all of the Company’s assets.",
-          "The Company may share your Personal Information with law enforcement agencies, government officials, or other third parties as required by law or to protect the rights, property, or safety of the Company, its customers, or the public.",
-          "Further, the Company may share your Personal Information, including but not limited to your name, address, contact details, and business operational details with third parties as part of the Platform’s services.",
-          "In such instances as may be provided in the Platform, the Company shall not be responsible for such disclosures to any unauthorized third parties unless such disclosures were made with your consent."
+          "The Company does not sell, share, rent or trade the information it has collected about you, other than as disclosed within this Policy.",
+          "The Company may share your information with third parties for marketing purposes and for the purpose of providing the Services.",
+          "If you post any content on the Platform, such content may be viewed by all the users and may be publicly distributed outside the Platform in perpetuity.",
+          "The Company uses or may use third party service providers to help it deliver certain aspects of the Services including but not limited to application development, hosting, maintenance, cloud storage facilities, virtual infrastructure, analysis, providing geolocation services, processing payments and such other similar services.",
+          "The Company only allows third party service providers to process your Personal Information for specified purposes in accordance with its instructions and does not permit them to use your Personal Information for their own purposes. The agreements of the Company with third parties permit them to use the Personal Information only for providing their services and are generally not used for purposes other than as disclosed in this Policy. In case any agreement is signed with the third parties for any purpose other than as disclosed in this Policy, the Company shall intimate you from time to time.",
+          "The Company may disclose your Personal Information to law enforcement authorities, regulators, governmental or public bodies and other relevant third parties to comply with any legal or regulatory requirements. The Company may also disclose information about you, if it determines that disclosure is reasonably necessary to enforce its Terms and Conditions or protect its operations or users.",
+          "Further, the Company may share your information, including but not limited to your Personal Information, area of operation and business details on its Platform or with its parent companies, subsidiaries and affiliates for internal reasons, including business and operational purposes.",
+          "In the interest of doing business with other users, you may choose to share additional Personal Information directly with such users while connecting off the Platform or through such features as may be provided on the Platform. The Company shall not be responsible for such disclosures or any unauthorized use of such information that you choose to make available to these users at your free will.",
         ]
       }
     ]
@@ -141,10 +167,10 @@ function Policy() {
       {
         "type": "orderedList",
         "items": [
-          "The Company will only retain your Personal Information for as long as it is necessary to fulfill the purposes for which it was collected, including for the purposes of satisfying any legal, accounting, or reporting requirements.",
-          "If you cease using the Platform, the Company may continue to retain your Personal Information for a reasonable period of time in order to respond to any inquiries or complaints, to comply with legal obligations, or to protect the rights, property, or safety of the Company, its customers, or the public.",
-          "After the retention period, the Company will securely delete or anonymize your Personal Information.",
-          "To determine the appropriate retention period for Personal Information, the Company considers the amount, nature, and sensitivity of the Personal Information, the potential risk of harm from unauthorized use or disclosure of your Personal Information, the purposes for which the Company processes your Personal Information, and whether the Company can achieve those purposes through other means, and the applicable legal requirements."
+         "The Company will only retain your Personal Information for as long as it is necessary to fulfill the purposes, the Company collected it for, including for the purposes of satisfying any legal, accounting, or reporting requirements, resolve disputes, conclude any activities related to cancellation of a user account, investigate, or prevent fraud and other inappropriate activity, to enforce our agreements and for other business reasons.",
+         "The Company retains your account information for as long as your account is active and thereafter for a continuous period. In case of user account deactivation or disablement, some of your information and the content provided by you will be retained in order to enable other users to make full use of the Services.",
+         "Further, any third party may retain the Personal Information for as long as it is necessary under the applicable law.",
+         "To determine the appropriate retention period for the Personal Information, the Company considers the amount, nature, and sensitivity of the personal data, the potential risk of harm from unauthorized use or disclosure of your Personal Information, the purposes for which the Company processes your Personal Information and whether the Company can achieve those purposes through other means and the applicable legal requirements."
         ]
       }
     ]
@@ -156,8 +182,7 @@ function Policy() {
       {
         "type": "orderedList",
         "items": [
-          "You have the right to review the Personal Information we hold about you and make corrections or modifications, request deletion of the same, or object to the processing of your Personal Information in certain circumstances.",
-          "To exercise these rights, you may contact the Company at the contact information provided in this Policy. However, the Company shall not be responsible for any interruption in the Services due to your request to review, correct, or delete your Personal Information."
+          "You will have the right to review the Personal Information and make corrections or rectifications, request data blocking where applicable or object, for legitimate reasons, to the processing of their Personal Information. However, the Company shall not be responsible for any interruption in or suspension of the Services on account of such corrections or rectifications."
         ]
       }
     ]
@@ -169,8 +194,8 @@ function Policy() {
       {
         "type": "orderedList",
         "items": [
-          "The Company collects domain names and IP addresses of visitors for statistical purposes, to measure the usage, to customize the content, or to otherwise improve the Platform.",
-          "The Company also aggregates information relating to visitor’s statistics, patterns, and data that are collected and retains the data concerning the IP address and domain names."
+          "The Company collects domain names and IP addresses of its visitors for statistical purposes, to measure use, to approximate user location, to improve the content or responsiveness of the Platform, or to customize the content or layout of the Platform for the individual visitor.",
+          "The Company may also aggregate information relating to its visitor’s traffic patterns from the data that it collects and retains concerning the IP addresses and domain names of its visitors."
         ]
       }
     ]
@@ -182,8 +207,8 @@ function Policy() {
       {
         "type": "orderedList",
         "items": [
-          "The Company requires location information about user sign-ups, current location, which it gets from signals such as the IP address of your device settings.",
-          "Location information may be used for purposes such as fraud prevention, to provide customer support, to customize the Platform, or to otherwise improve the Services."
+            "The Company requires information about user sign ups and current location, which it gets from signals such as users IP address or device settings, to securely and reliably set up and maintain user accounts and to provide its Services to you.",
+            "Subject to users settings, the Company may collect, use and store additional information about your location - such as your current precise position or places where they have previously used the Services, to authenticate user log in, provide customer support and operate and maintain the Services."
         ]
       }
     ]
@@ -195,8 +220,8 @@ function Policy() {
       {
         "type": "orderedList",
         "items": [
-          "The Company uses cookies to identify which pages are being used, whether you are subsequently visiting the Platform. This helps us to analyze data about webpage traffic and improve the Platform in order to tailor it to customer needs.",
-          "Cookies also help us to track user activity, to provide customer support, to customize the Platform, or to otherwise improve the Services. Most web browsers automatically accept cookies, but you can usually modify your browser settings to decline cookies if you prefer."
+          "The Company uses cookies to identify which pages are being used, whether you are subsequently visiting the Platform. This helps us analyze data about webpage traffic and improve our Platform in order to tailor it to customer needs. The Company uses this information for statistical analysis purposes, to understand your preferences, to retarget advertisements and then the data is removed from the system.",
+          "You can choose to accept or decline cookies. Most web browsers automatically accept cookies, but you can usually modify browser settings to decline cookies if you prefer. This may prevent you from taking full advantage of the Platform."
         ]
       }
     ]
@@ -208,8 +233,8 @@ function Policy() {
       {
         "type": "orderedList",
         "items": [
-          "The Company may contain links to other third-party sites.",
-          "Please note that the Company does not control these third-party sites and is not responsible for their privacy practices and policies. You shall read the policies, terms, and conditions of those sites before browsing or using the third-party sites."
+          "The Platform may contain links to other third-party sites.",
+          "This Policy does not apply to the privacy practices and policies of those sites and you shall read the policies, terms and conditions of those sites before accessing, browsing and/or using the said third-party sites."
         ]
       }
     ]
@@ -221,33 +246,31 @@ function Policy() {
       {
         "type": "orderedList",
         "items": [
-          "The Platform is created and maintained as a publicly available hosting provider. The Information is protected and kept secure using commercially reasonable measures. The Company expressly disclaims any representation or warranty, whether express or implied, as to the accuracy, completeness, or suitability of the Information for any purpose.",
-          "The Company shall not be liable for any loss or damage that may arise to any person from any inadvertent error in the Information or its results contained on the Platform.",
-          "The Company shall not be liable for any loss of Information caused whether as a result of any interruption, suspension, or termination of the Platform or otherwise.",
-          "The Company shall not be liable for any damages whether direct, indirect, special, incidental, or consequential including loss of revenue or lost profits that may arise from or in connection with the use of the Platform.",
-          "The Company shall not be liable for any loss of data, technical difficulties, viruses, worms, or other malicious software that may be transmitted to or through the Platform by any third party.",
-          "The Company shall not be liable for any errors, omissions, interruptions, deletions, defects, delays in operation or transmission, communication line failures, theft, or destruction or unauthorized access to, or alteration of, user communications.",
-          "You use the Platform at your own risk. You acknowledge that the Company does not assume any responsibility for the accuracy, completeness, or suitability of the Information for any purpose."
+          "The Platform is created and maintained by a reputed web hosting service provider. The Platform is protected and kept secured by using commercially reasonable security practices.",
+          "The Company makes no express representation or warranty as to whether the information you transmit to the Platform will be intercepted by, or otherwise be received by, an unauthorized third party and you transmit such information at your own risk. The Company shall have no liability in respect of any content posted by you on the Platform or on the direct messages.",
+          "The Company shall not be liable for any loss of information whatsoever caused whether as a result of any interruption, suspension or termination of the Platform or otherwise.",
+          "The Company shall not be held liable for any loss of data technical or otherwise, information, particulars supplied by you due to the reasons beyond its control like corruption of data or delay or failure to perform as a result of any causes or conditions that are beyond its control including but not limited to strike, riots, civil unrest, government policies, tampering of data by unauthorized persons like hackers, war and other natural calamities.",
+          "The Company assumes no liability or responsibility for disclosure of your information due to errors in transmission, unauthorized third-party access or other causes beyond our control. You play an important role in keeping your Personal Information secure."
         ]
       }
     ]
   },
   {
-    "id": "dataProtectionOfficer",
-    "title": "DATA PROTECTION OFFICER",
+    "id": "grievanceOfficer",
+    "title": "GRIEVANCE OFFICER",
     "blocks": [
       {
         "type": "orderedList",
         "items": [
-          "For redressal of your grievances, the Information Technology Act, 2000, the amendments thereto, and the Rules made thereunder, the Company has designated a Grievance Officer who shall respond to any grievances raised by you.",
-          "The designated Grievance Officer is authorized to take up the matter with the concerned team and resolve the issue in accordance with the applicable laws.",
+          "In compliance with the Information Technology Act, 2000 the amendments thereto and the Rules framed thereunder, the Company has designated a Grievance Officer for redressal of all your grievances. The Grievance Officer will respond to all grievances expeditiously and in any case not later than 15 (fifteen) days from the date of receipt of any grievance.",
           {
-            "text": "You may contact the Grievance Officer at the following address:",
+            "text": "Any complaints or request or concerns with regards to use, processing or disclosure of information provided by you or breach of these terms may be taken up with the designated Grievance Officer as mentioned below:",
             "subItems": [
-              "Name: [Redacted]",
-              "Address: Amplicomm Solutions Private Limited, Plot No. 41/1, 3rd Floor, S.No. 59/1, Aurob, Pune 411057, Maharashtra, India",
-              "Phone No.: [Redacted]",
-              "Email ID: [Redacted]"
+              "Details of the Grievance Officer:",
+              "Name: [•]",
+              "Address: AmpliComm Solutions Private Limited, Plot No. 416, Sind Co-Op. Hsg. Society, Aundh, Pune 411007, Maharashtra, India.",
+              "Phone No.: [•]",
+              "Email: [•]"
             ]
           }
         ]
@@ -261,7 +284,7 @@ function Policy() {
       {
         "type": "orderedList",
         "items": [
-          "The Policy shall be governed by and construed in accordance with the laws of India, subject to Clause 18 of this Policy, the disputes that might arise between you and the Company shall be subject to the jurisdiction and venue of the Courts in Pune, Maharashtra."
+          "This Policy shall be governed by and construed in accordance with the laws of India. Subject to Clause 18 of this Policy, the disputes that might arise between you and the Company shall have the jurisdiction and venue of the Courts in Pune, Maharashtra."
         ]
       }
     ]
@@ -273,7 +296,7 @@ function Policy() {
       {
         "type": "orderedList",
         "items": [
-          "Any dispute, claim, or difference (including a dispute regarding the existence, validity, interpretation, or alleged breach of this Policy) arising out of or relating to this Policy shall be referred to and finally resolved by arbitration in Pune, Maharashtra in accordance with the Arbitration and Conciliation Act, 1996. The arbitration shall be conducted by a sole arbitrator appointed by the Company. The language of arbitration shall be English."
+          "Any claims, dispute and or difference (including a dispute regarding the existence, validity, interpretation or alleged breach of the Policy) arising out of, or relating to this Policy shall be referred for arbitration to a sole arbitrator under the provisions of Arbitration and Conciliation Act, 1996 and the amendments thereto from time to time. The venue of Arbitration shall be at Pune, Maharashtra and the language shall be English."
         ]
       }
     ]
@@ -285,8 +308,8 @@ function Policy() {
       {
         "type": "orderedList",
         "items": [
-          "The Company reserves the right to revise, amend, modify, or delete any part of this Policy in part or in full at its sole discretion as required by applicable laws.",
-          "The updated version of this Policy will be posted on the Platform from time to time."
+            "The Company reserves its right to add, revise, amend, modify, or delete any part of this Policy (in part or in full) at its sole discretion or as required by applicable law.",
+            "The updated version of this Policy in force will be posted on the Company's Platforms from time to time."
         ]
       }
     ]

@@ -12,6 +12,7 @@ function Disclaimer() {
   const legalInfoData = [
   {
     "id": "general",
+    "title": "GENERAL",
     "blocks": [
       {
         "type": "paragraph",

@@ -38,8 +38,8 @@
 }
 
 .navLogo .logoImg {
-    width: 168px;
-    height: 38px;
+    width: 212px;
+    height: 48px;
     object-fit: contain;
     margin: 100px 0 28px 0;
     z-index: 1;
@@ -212,6 +212,8 @@
     }
 
     .navLogo .logoImg {
+        width: 168px;
+        height: 38px;
         margin: 0;
     }
 

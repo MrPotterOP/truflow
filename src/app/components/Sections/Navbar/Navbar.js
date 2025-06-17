@@ -22,7 +22,7 @@ function Navbar() {
                     <div className={styles.radGrad}>
                         <Image className={styles.radImg} src="/assets/grad.png" alt="RadGrad" width={1100} height={1100} />
                     </div>
-                    <Link href="#"><Image className={styles.logoImg} src="/assets/logo.png" alt="Truflo" width={170} height={100} /></Link>
+                    <Link href="/"><Image className={styles.logoImg} src="/assets/logo.png" alt="Truflo" width={170} height={100} /></Link>
                 </div>
 
                 <div className={`${styles.navMenu} ${isActive ? styles.active : ''}`}>
@@ -33,11 +33,11 @@ function Navbar() {
 
                     <div className={styles.linksBox}>
                         <div className={styles.links}>
-                            <Link href="#process">Products</Link>
-                            <Link href="#services">Offerings</Link>
-                            <Link href="#features">Features</Link>
-                            <Link href="#integrations">Connectors</Link>
-                            <Link href="#milestone">Outcomes</Link>
+                            <Link href="/#process">Products</Link>
+                            <Link href="/#services">Offerings</Link>
+                            <Link href="/#features">Features</Link>
+                            <Link href="/#integrations">Connectors</Link>
+                            <Link href="/#milestone">Outcomes</Link>
                         </div>
 
                         <div className={styles.ctaBox}>

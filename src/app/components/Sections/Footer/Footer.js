@@ -85,10 +85,10 @@ function Footer() {
                 <p>Copyright © 2025 Truflo Intelligence | </p>
                 <p>All rights reserved || </p>
 
-                <Link href="#">
+                <Link href="/policy">
                     Privacy Policy | 
                 </Link>
-                <Link href="#">
+                <Link href="/disclaimer">
                     Disclaimer
                 </Link>
             </div>

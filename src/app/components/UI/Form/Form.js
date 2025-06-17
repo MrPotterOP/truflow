@@ -5,10 +5,9 @@ import { useSearchParams } from "next/navigation";
 
 // Country codes data with validation rules
 const countryCodes = [
-  { "code": "+91", "country": "IND", "maxLength": 10, "placeholder": "9876543210" },
   { "code": "+93", "country": "AFG", "maxLength": 9, "placeholder": "701234567" },
+  { "code": "+91", "country": "IND", "maxLength": 10, "placeholder": "9876543210" },
   { "code": "+355", "country": "ALB", "maxLength": 9, "placeholder": "672345678" },
-  { "code": "+213", "country": "DZA", "maxLength": 9, "placeholder": "771234567" },
   { "code": "+376", "country": "AND", "maxLength": 6, "placeholder": "123456" },
   { "code": "+244", "country": "AGO", "maxLength": 9, "placeholder": "923456789" },
   { "code": "+1-264", "country": "AIA", "maxLength": 7, "placeholder": "2351234" },
@@ -63,6 +62,7 @@ const countryCodes = [
   { "code": "+253", "country": "DJI", "maxLength": 8, "placeholder": "77123456" },
   { "code": "+1-767", "country": "DMA", "maxLength": 7, "placeholder": "2251234" },
   { "code": "+1-809", "country": "DOM", "maxLength": 10, "placeholder": "8091234567" },
+  { "code": "+213", "country": "DZA", "maxLength": 9, "placeholder": "771234567" },
   { "code": "+670", "country": "TLS", "maxLength": 8, "placeholder": "73123456" },
   { "code": "+593", "country": "ECU", "maxLength": 9, "placeholder": "991234567" },
   { "code": "+20", "country": "EGY", "maxLength": 10, "placeholder": "1012345678" },

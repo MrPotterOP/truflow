@@ -4,6 +4,8 @@ import Footer from "@/app/components/Sections/Footer/Footer";
 
 import InfoDisplay from "@/app/components/UI/Info/InfoDisplay";
 
+import {Suspense} from "react";
+
 function Policy() {
 
     const data = [
@@ -300,7 +302,10 @@ function Policy() {
 
             <InfoDisplay data={data} />
 
-            <LeadForm />
+            <Suspense fallback={<div>Loading...</div>}>
+                <LeadForm />
+            </Suspense>
+            
             <Footer />
         </main>
      );

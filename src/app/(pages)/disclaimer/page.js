@@ -1,8 +1,9 @@
 import Footer from "@/app/components/Sections/Footer/Footer";
 import LeadForm from "@/app/components/Sections/LeadForm/LeadForm";
 import Navbar from "@/app/components/Sections/Navbar/Navbar";
-import Info from "@/app/components/UI/Info/Info";
 import InfoDisplay from "@/app/components/UI/Info/InfoDisplay";
+
+import {Suspense} from "react";
 
 function Disclaimer() {
 
@@ -90,7 +91,11 @@ function Disclaimer() {
             </div>
 
             <InfoDisplay data={legalInfoData}/>
-            <LeadForm />
+            
+            <Suspense fallback={<div>Loading...</div>}>
+                <LeadForm />
+            </Suspense>
+
             <Footer />
         </main>
      );

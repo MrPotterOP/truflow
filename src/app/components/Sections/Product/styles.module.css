@@ -27,7 +27,7 @@
 
 .productTitle h3 {
     font-size: var(--fs-h2);
-    font-weight: 700;
+    font-weight: 400;
 
     background: var(--gl-blue);
     -webkit-background-clip: text;
@@ -39,6 +39,7 @@
 
 .productTitle h3 span {
     background: var(--gl-d2l);
+    font-weight: 700;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
@@ -50,6 +51,7 @@
     font-size: var(--fs-p3);
     font-weight: 400;
     color: var(--clr-grey);
+    line-height: 1.6;
 }
 
 
@@ -118,7 +120,7 @@
 
 .prodTagline p {
     font-size: var(--fs-p2);
-    font-weight: 700;
+    font-weight: 400;
     color: var(--clr-body);
 }
 
@@ -170,7 +172,7 @@
 
     .productContentBox {
         display: flex;
-        gap: 80px;
+        gap: 70px;
     }
 
     .productContent {
@@ -234,7 +236,7 @@
     }
 
     .prodDisplayStatic {
-        max-width: 620px;
+        max-width: 670px;
     }
 
     .prodDisplayStatic img {
@@ -273,9 +275,9 @@
         max-height: 540px;
     }
 
-    /* .prodDisplayDynamic .prodDisplayDynamicBox:nth-child(2) img {
-        max-height: 200px;
-    } */
+    .prodDisplayDynamic .prodDisplayDynamicBox .second {
+        scale: 1.097;
+    }
 
 
 

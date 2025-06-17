@@ -13,6 +13,7 @@
 .catTitle {
     max-width: 320px;
     font-size: var(--fs-h2);
+    font-weight: 400;
 }
 
 .catTitle span {
@@ -22,6 +23,8 @@
 
     background-clip: text;
     color: transparent;
+
+    font-weight: 700;
 }
 
 .catBox {

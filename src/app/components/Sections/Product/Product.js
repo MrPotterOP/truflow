@@ -13,14 +13,17 @@ function Product() {
         {
             title: "See performance across every channel and SKU",
             img: "/assets/prod1.png",
+            id: "first"
         },
         {
             title: "Understand the why behind every spike, dip, or inefficiency",
             img: "/assets/prod2.png",
+            id: "second"
         },
         {
             title: "Take action — through insights or our managed execution service",
             img: "/assets/prod3.png",
+            id: "third"
         }
     ]
 
@@ -65,7 +68,7 @@ function Product() {
                         <div className={styles.prodDisplayDynamic}>
                             <AnimatePresence>
                                 <motion.div className={styles.prodDisplayDynamicBox} key={product.img} initial={{ opacity: 0, scale: 0.5 }} animate={{ opacity: 1, scale: 1 }}>
-                                    <Image src={product.img} alt="product" width={600} height={800} priority />
+                                    <Image src={product.img} className={styles[product.id]} alt="product" width={600} height={800} priority />
                                 </motion.div>
                             </AnimatePresence>
                         </div>

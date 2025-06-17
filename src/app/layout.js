@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${fontPrime.variable} font-sans`}>
         {children}
-        <Chat href="#leadForm" ariaLabel="Open chat" bottom="84px" />
+        <Chat href="#leadForm" ariaLabel="Open chat" bottom="90px" side="44px" />
       </body>
     </html>
   );

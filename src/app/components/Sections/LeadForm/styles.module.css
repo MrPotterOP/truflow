@@ -27,8 +27,8 @@
 }
 
 .formDesc {
-    font-size: var(--fs-p2);
-    font-weight: 600;
+    font-size: var(--fs-p3);
+    font-weight: 400;
 }
 
 @media (min-width: 768px) {

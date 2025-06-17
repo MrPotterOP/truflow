@@ -5,6 +5,8 @@ import styles from './styles.module.css';
 
 import Link from 'next/link';
 
+import Arrow from '../../UI/SVG/Arrow';
+
 const Services = () => {
   const [activeService, setActiveService] = useState('outcome');
   const [showLess, setShowLess] = useState(false);
@@ -179,7 +181,9 @@ const Services = () => {
                   </button> */}
                   <Link className={styles.cardCta} href="#leadForm">
                     {card.cta}
-                    <span className={styles.arrow}>→</span>
+                    <span className={styles.arrow}>
+                      <Arrow />
+                    </span>
                   </Link>
                 </div>
               ))}
@@ -190,7 +194,9 @@ const Services = () => {
               onClick={() => setShowLess(!showLess)}
             >
               {showLess ? 'Show More' : 'Show Less'}
-              <span className={`${styles.chevron} ${showLess ? styles.up : ''}`}>↑</span>
+              <span className={`${styles.chevron} ${showLess ? styles.up : ''}`}>
+                <Arrow />
+              </span>
             </button>
           </div>
         )}

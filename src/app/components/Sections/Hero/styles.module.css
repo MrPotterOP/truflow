@@ -64,7 +64,7 @@
 
 .btnBox {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%;
 }
 
@@ -81,6 +81,8 @@
 .primeBtn {
     background: var(--gl-d2l);
     color: var(--clr-white);
+    display: flex;
+    gap: 6px;
 }
 
 .primeBtn:hover {
@@ -91,6 +93,19 @@
     display: inline-block;
     transform: translateX(0);
     transition: transform 0.3s ease-in-out;
+    display: grid;
+    place-content: center;
+}
+
+.primeBtn span svg {
+    display: inline-block;
+    transform: rotate(90deg);
+    width: 14px;
+    height: 14px;
+}
+
+.primeBtn span svg path {
+    fill: var(--clr-white);
 }
 
 .primeBtn:hover span {

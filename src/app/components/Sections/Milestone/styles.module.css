@@ -56,14 +56,14 @@
 
 .value {
   color: var(--clr-prime);
-  font-weight: 600;
+  font-weight: 700;
   font-size: var(--fs-p1);
   line-height: 1.1;
 }
 
 .label {
   color: var(--clr-white);
-  font-weight: 600;
+  font-weight: 700;
   font-size: var(--fs-p1);
   line-height: 1.2;
   margin-left: 8px;
@@ -109,6 +109,28 @@
   margin: 0 10px 0 -2px;
 }
 
+.arrowFlex {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.arrow {
+  display: grid;
+  place-content: center;
+
+  transform: rotate(90deg);
+}
+
+.arrow svg {
+  width: 24px;
+  height: 24px;
+}
+
+.arrow svg path {
+  fill: var(--clr-grey-drk);
+}
+
 /* Tablet styles */
 @media (min-width: 768px) {
   .milestone {
@@ -145,10 +167,12 @@
 
   .value {
     font-size: var(--fs-p1);
+    font-weight: 600;
   }
 
   .label {
     font-size: var(--fs-p1);
+    font-weight: 600;
   }
 
   .description {

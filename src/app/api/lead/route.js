@@ -13,6 +13,7 @@ const formSchema = z.object({
   source: z.string(),
   campaign: z.string(),
   medium: z.string(),
+  country: z.string(),
 });
 
 // Initialize rate limiter: 10 requests per minute per IP
@@ -52,6 +53,7 @@ export async function POST(request) {
           email: validatedData.email,
           mobile_number: validatedData.number,
           job_title: validatedData.designation,
+          country: validatedData.country,
           custom_field: {
             "cf_company_name": validatedData.company,
           },

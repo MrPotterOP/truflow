@@ -8,6 +8,8 @@ import { motion } from 'framer-motion';
 
 import Odometer from '../../UI/Odometer/Odometer';
 
+import Arrow from '../../UI/SVG/Arrow';
+
 const Milestone = () => {
   const milestones = [
     {
@@ -65,6 +67,7 @@ const Milestone = () => {
     "/assets/logos/image 23.png",
   ];
 
+  
   return (
     <section id="milestone" className={styles.milestone}>
       <div className={styles.container}>
@@ -121,7 +124,9 @@ const Milestone = () => {
             <div className={styles.metricValue}>
               <span className={styles.value}>
                 <Odometer to={40} from={10} />
-                </span><span className={`${styles.label} ${styles.cent} `}>% →</span><span className={styles.value}>    
+                </span><span className={`${styles.label} ${styles.cent} ${styles.arrowFlex}`}>% <div className={styles.arrow}>
+                    <Arrow />
+                  </div></span><span className={styles.value}>    
                   <Odometer to={95} from={0} /> 
                   </span><span className={`${styles.label} ${styles.cent} `}>%</span>
             </div>

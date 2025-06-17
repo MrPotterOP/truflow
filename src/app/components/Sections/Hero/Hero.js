@@ -7,6 +7,7 @@ import Image from 'next/image';
 
 import { motion } from 'framer-motion';
 import { fadeBlur, transitionFade  } from '../../../animations';
+import Arrow from '../../UI/SVG/Arrow';
 
 function Hero() {
     const [isVideoOpen, setIsVideoOpen] = useState(false);
@@ -57,7 +58,10 @@ function Hero() {
                                     variants={fadeBlur}
                                     transition={transitionFade}
                                 >
-                                    <Link href="#leadForm" className={styles.primeBtn}>Talk to us <span>→</span><div>
+                                    <Link href="#leadForm" className={styles.primeBtn}>Talk to us <span>
+                                        <Arrow />
+
+                                        </span><div>
                                             {/* <Image src="/assets/arrow.png" alt="Arrow" width={20} height={20} /> */}
                                         </div></Link>
                                     <Link href="#services" className={styles.greyBtn}>Explore our offerings</Link>

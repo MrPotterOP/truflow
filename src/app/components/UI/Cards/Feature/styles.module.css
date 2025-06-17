@@ -26,8 +26,9 @@
 
 .featureDescription {
     font-size: var(--fs-p3);
-    font-weight: 700;
+    font-weight: 400;
     color: var(--clr-grey);
+    padding: 0 14px;
 }
 
 
@@ -56,6 +57,7 @@
     .featureDescription {
         font-size: var(--fs-p4);
         font-weight: 400;
+        padding: 0;
     }
 
 }

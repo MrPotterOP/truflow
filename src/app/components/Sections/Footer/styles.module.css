@@ -85,11 +85,13 @@
 
 .infoAddress {
     font-size: var(--fs-p3);
-    font-weight: 700;
+    font-weight: 400;
 
     background: var(--gl-d2l);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+
+    line-height: 140%;
 
     background-clip: text;
     color: transparent;
@@ -167,6 +169,10 @@
         width: 100%;
 
         border-bottom: 1px solid var(--clr-grey-drk);
+
+        line-height: 2.4;
+
+        font-size: var(--fs-h1);
     }
 
     .footerInfoTitle h6 {

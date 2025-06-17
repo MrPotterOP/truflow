@@ -15,7 +15,7 @@ function Footer() {
         },
         {
             name: 'Youtube',
-            href: '#',
+            href: 'https://www.youtube.com/@Truflo-r1l',
             icon: '/assets/logos/yt.png'
         },
         {

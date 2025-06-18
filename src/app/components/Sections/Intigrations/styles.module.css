@@ -8,6 +8,7 @@
     }
     .integrationsBox {
         max-width: 740px;
+        flex-shrink: initial;
     }
     .integrationsContent {
         gap: 18px;
@@ -102,6 +103,7 @@
         border-radius: 30px;
         display: grid;
         place-content: center;
+        flex-shrink: 0;
     }
 
     .initImg {

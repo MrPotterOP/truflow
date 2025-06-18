@@ -1,7 +1,7 @@
 import styles from './styles.module.css';
 import Image from 'next/image';
 
-import ProcessIllustration from '../../UI/ProcessIllustration/ProcessIllustration';
+// import ProcessIllustration from '../../UI/ProcessIllustration/ProcessIllustration';
 
 function Process() {
 
@@ -17,7 +17,11 @@ function Process() {
                     <p className={styles.description}>TruFlo solves the complexities of fragmented data ecosystems with a real-time architecture built for scale. From ingestion to orchestration, every layer is optimized for speed, intelligent enrichment, and operational impact.</p>
                 </div>
             
-            <ProcessIllustration />
+            {/* <ProcessIllustration /> */}
+
+            <div className={styles.illustration}>
+                <Image src="/assets/illustration.png" alt="illustration" width={1200} height={1100} />
+            </div>
                 
             </div>
         </section>

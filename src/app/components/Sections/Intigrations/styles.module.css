@@ -107,7 +107,8 @@
     .initImg {
         width: 100%;
         /* height: 240px;  */
-        height: 266px;
+        /* height: 266px; */
+        height: 398px;
         overflow: hidden;
     }
 

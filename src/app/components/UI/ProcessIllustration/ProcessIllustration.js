@@ -15,7 +15,7 @@ function ProcessIllustration() {
         },
         {
             title: 'B2B / B2C Commerce',
-            icons: ['b2b1', 'b2b2', 'b2b3', 'b2b4']
+            icons: ['c1', 'c2', 'c3', 'c4']
         },
         {
             title: 'Order Management',

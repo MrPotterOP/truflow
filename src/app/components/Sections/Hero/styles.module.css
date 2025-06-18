@@ -249,6 +249,7 @@
         text-align: left;
         position: relative;
         padding: 0 48px;
+        overflow: visible;
     }
 
     .heroBox {

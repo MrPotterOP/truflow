@@ -83,7 +83,7 @@ function Hero() {
                                 />
                                 <div className={styles.playButton}>
                                      <svg width="68" height="68" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="34" cy="34" r="33" stroke="#e7660b" stroke-width="2" fill="white"/>
+                                        <circle cx="34" cy="34" r="33" stroke="#e7660b" strokeWidth="2" fill="white"/>
                                         <polygon points="28,22 28,46 48,34" fill="#e7660b"/>
                                     </svg>
 

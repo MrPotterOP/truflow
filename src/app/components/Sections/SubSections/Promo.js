@@ -11,9 +11,8 @@ function Promo() {
       <motion.div className={styles.promoBox}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, margin: '-200px' }}
+        viewport={{ once: true, margin: '-60px' }}
         transition={{ staggerChildren: 0.2}}
-
       >
           <motion.div className={styles.promoContent}
             variants={slideUp}

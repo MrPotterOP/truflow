@@ -24,7 +24,7 @@
     left: calc(50% - 280px / 2);
     height: .5px;
     width: 280px;
-    z-index: 9999;
+    z-index: 99;
     background: var(--clr-grey-drk);
 }
 

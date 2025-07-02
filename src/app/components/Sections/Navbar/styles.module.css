@@ -17,7 +17,6 @@
 .navLogo {
     position: relative;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 12px;
@@ -25,7 +24,19 @@
     overflow: hidden;
 }
 
-.radGrad {
+.navLogo .menuBtn {
+    position: absolute;
+    left: 16px;
+    top: 14px;
+}
+
+.navLogo .menuBtn img {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+}
+
+/* .radGrad {
     position: absolute;
     top: 0;
     left: 0;
@@ -35,13 +46,14 @@
     width: 100vw;
     height: 100%;
     object-fit: contain;
-}
+} */
 
 .navLogo .logoImg {
-    width: 212px;
+    width: 210px;
     height: 48px;
     object-fit: contain;
-    margin: 100px 0 28px 0;
+    /* margin: 100px 0 28px 0; */
+    margin: 24px 0 0 0;
     z-index: 1;
 }
 
@@ -149,6 +161,24 @@
     color: var(--clr-white);
 }
 
+.mobCtaBox .roundBtn {
+    font-size: var(--fs-p3);
+    color: var(--clr-body);
+    font-weight: 700;
+    background: var(--gl-d2l);
+    padding: 12px 24px;
+    border-radius: 200px;
+    color: var(--clr-white);
+}
+
+.mobCtaBox .txtBtn {
+    font-size: var(--fs-p3);
+    font-weight: 700;
+    color: var(--clr-body);
+}
+
+
+
 .ctaBox .roundBtn:hover {
     background: var(--clr-body);
 }
@@ -157,16 +187,16 @@
     padding-bottom: 24px;
 }
 
-.navMenu.active .menuBtn {
+/* .navMenu.active .menuBtn {
     opacity: 0;
 }
 
 .navMenu.active .links {
     max-height: 1200px; 
-}
+} */
 
 /* Fixed: Use opacity and visibility for smooth show/hide */
-.navMenu.active .ctaBox, .navMenu.active .xBox {
+/* .navMenu.active .ctaBox, .navMenu.active .xBox {
     max-height: 1200px;
     opacity: 1;
     visibility: visible;
@@ -174,14 +204,81 @@
 
 .navMenu.active .linksBox {
     max-height: 1200px;
-    /* gap: 32px; */
 }
 
 .navMenu.active .ctaBox {
     margin: 32px 0;
+} */
+
+.mobMenu {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #BFBFBF;
+    z-index: 99999;
+
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+    padding: 30px 28px;
+
+    transition: left 0.5s ease-in-out;
 }
 
+.mobMenu.active {
+    left: 0;
+}
+
+.mobMenuLogo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mobMenuLogo .logoImg {
+    width: 230px;
+    height: 54px;
+    object-fit: contain;
+}
+
+.mobMenuLogo .xBtn {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.mobLinksBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.mobLinks {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.mobLinks a {
+    font-size: var(--fs-p2);
+    color: #012552;
+    font-weight: 700;
+}
+
+.mobCtaBox {
+    display: flex;
+    gap: 36px;
+    align-items: baseline;
+}
+
+
+
 @media (min-width: 1024px) {
+    .mobMenu {
+        display: none;
+    }
     .navbar {
         justify-content: center;
         align-items: center;
@@ -194,9 +291,9 @@
     .navBox {
         flex-direction: row;
         justify-content: space-between;
-        gap: 70px;
+        gap: 40px;
         background-color: var(--clr-grey-lt);
-        width: 1352px;
+        width: 100%;
         padding: 26px 48px;
     }
 
@@ -240,7 +337,7 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        gap: 42px;
+        gap: 20px;
         width: max-content; 
         max-height: 100%;
         overflow: hidden; 
@@ -256,11 +353,11 @@
         display: none;
     }
 
-    /* Desktop: Reset to normal display behavior */
+
     .ctaBox {
         display: flex;
         align-items: center;
-        gap: 32px;
+        gap: 14px;
         max-height: 400px;
         opacity: 1;
         visibility: visible;
@@ -276,5 +373,35 @@
         font-size: var(--fs-p4);
         font-weight: 700;
         padding: 12px 24px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .navBox {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 70px;
+        background-color: var(--clr-grey-lt);
+        width: 1352px;
+        padding: 26px 48px;
+    }
+
+    .links {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 42px;
+        width: max-content; 
+        max-height: 100%;
+        overflow: hidden; 
+    }
+
+    .ctaBox {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+        max-height: 400px;
+        opacity: 1;
+        visibility: visible;
     }
 }

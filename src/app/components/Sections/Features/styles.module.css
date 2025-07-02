@@ -66,7 +66,7 @@
 
     .featuresBox {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         gap: 42px;
     }
 
@@ -75,6 +75,14 @@
 
 @media (min-width: 1024px) {
       .featuresBox {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 42px;
+    } 
+}
+
+@media (min-width: 1280px) {
+    .featuresBox {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 42px;

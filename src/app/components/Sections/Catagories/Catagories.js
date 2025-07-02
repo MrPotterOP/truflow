@@ -17,8 +17,8 @@ function Catagories() {
             icon: "/assets/cat2.png",
         },
         {
-            title: "System Integrators & Consultants",
-            description: "Deliver digital Go-To-Market & analytics for your clients using TruFlo as a platform",
+            title: "Business & Technology Consultants",
+            description: "D2C, FMCG, Electronics, Fashion, Personal Care",
             icon: "/assets/cat3.png",
         },
         {

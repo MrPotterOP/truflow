@@ -137,7 +137,8 @@
     .footerContent {
 
         flex-direction: row;
-        gap: 220px;
+        /* gap: 220px; */
+        gap: 80px;
         
         padding: 0 42px 20px 42px;
         border-bottom: 1px solid var(--clr-grey-drk);
@@ -224,3 +225,8 @@
 }
 
 
+@media (min-width: 1280px) {
+    .footerContent {
+        gap: 220px;
+    }
+}

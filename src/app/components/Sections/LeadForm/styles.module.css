@@ -32,14 +32,14 @@
 }
 
 @media (min-width: 768px) {
-
+     
     .leadForm {
         margin: 100px 0 0 0;
         padding: 80px 40px;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
-        gap: 220px;
+        gap: 100px;
         width: 100%;
     }
 
@@ -57,7 +57,34 @@
         font-size: var(--fs-p3);
         font-weight: 400;
     }
+}
+
+@media (min-width: 1024px) {
+
+   
+    
+
+    .leadForm {
+        margin: 100px 0 0 0;
+        padding: 80px 40px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 100px;
+        width: 100%;
+    }
 
 
+}
 
+@media (min-width: 1200px) {
+    .leadForm {
+        margin: 100px 0 0 0;
+        padding: 80px 40px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 220px;
+        width: 100%;
+    }
 }

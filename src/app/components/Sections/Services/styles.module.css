@@ -287,6 +287,8 @@
     gap: 20px;
     margin-bottom: 48px;
     width: 100%;
+
+    flex-wrap: wrap;
   }
 
   .serviceButton {
@@ -391,6 +393,17 @@
 }
 
 @media (min-width: 1024px) {
+  .serviceCards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .serviceButtons {
+    flex-wrap: nowrap;
+  }
+
+}
+
+@media (min-width: 1200px) {
   .serviceCards {
     grid-template-columns: repeat(4, 1fr);
   }

@@ -225,21 +225,7 @@ p {
     font-size: var(--fs-p6);
   }
 
-  .highlight::before {
-        width: 4px;
-        height: calc(100% + 6px);
-        top: -6px;
-        left: -8px;
-        background: var(--clr-prime);
-    }
-
-  .highlight::after {
-      height: calc(100% + 6px);
-
-      top: -6px;
-      left: -4px;
-      background: linear-gradient(90deg, #FAE2CE 0%, rgba(250, 226, 206, 0) 14.84%);
-  }
+  
 
 
   .gradBorderLt {
@@ -270,5 +256,24 @@ p {
 
   .pageTitle {
     margin: 60px 0 60px 0;
+  }
+}
+
+
+@media (min-width: 1024px) {
+  .highlight::before {
+        width: 4px;
+        height: calc(100% + 6px);
+        top: -6px;
+        left: -8px;
+        background: var(--clr-prime);
+    }
+
+  .highlight::after {
+      height: calc(100% + 6px);
+
+      top: -6px;
+      left: -4px;
+      background: linear-gradient(90deg, #FAE2CE 0%, rgba(250, 226, 206, 0) 14.84%);
   }
 }

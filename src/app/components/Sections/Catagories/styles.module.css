@@ -71,11 +71,12 @@
         display: grid;
         grid-template-columns: repeat(6, 1fr);
         grid-template-areas: 
-            "itm1 itm1 itm2 itm2 itm3 itm3"
-            ".  itm4 itm4 itm5 itm5 .";
+            "itm1 itm1 itm1 itm2 itm2 itm2"
+            "itm3 itm3 itm3 itm4 itm4 itm4"
+            ". itm5 itm5 itm5 itm5 ."
         ;
         row-gap: 100px;
-        column-gap: 38px;
+        column-gap: 30px;
     }
 
     .catBox .catCard:nth-child(1) {
@@ -99,4 +100,31 @@
     }
 
 
+}
+
+
+@media (min-width: 1024px) {
+    .catBox {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-areas: 
+            "itm1 itm1 itm2 itm2 itm3 itm3"
+            ".  itm4 itm4 itm5 itm5 .";
+        ;
+        row-gap: 100px;
+        column-gap: 38px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .catBox {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-areas: 
+            "itm1 itm1 itm2 itm2 itm3 itm3"
+            ".  itm4 itm4 itm5 itm5 .";
+        ;
+        row-gap: 100px;
+        column-gap: 38px;
+    }
 }

@@ -6,7 +6,7 @@
     align-items: center;
     gap: 36px;
     justify-content: center;
-    padding: 48px 10px;
+    padding: 48px 20px;
 
     background: var(--gl-blue);
 }
@@ -19,12 +19,14 @@
 }   
 
 .title span {
-     background: var(--gl-d2l);
+     /* background: var(--gl-d2l);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
     background-clip: text;
-    color: transparent;
+    color: transparent; */
+
+    color: var(--clr-prime);
     display: block;
 
     font-weight: 700;

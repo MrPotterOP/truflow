@@ -1,5 +1,5 @@
 .feature {
-    width: 320px;
+    width: 100%;
     padding: 30px 14px;
     background-color: #F7F5F2;
     border-radius: 26px;
@@ -29,6 +29,12 @@
     font-weight: 400;
     color: var(--clr-grey);
     padding: 0 14px;
+}
+
+@media (min-width: 425px) {
+    .feature {
+        width: 330px;
+    }
 }
 
 

@@ -1,6 +1,6 @@
 .leadForm {
     margin: 48px 0 0 0;
-    padding: 36px 10px;
+    padding: 36px 20px;
     display: flex;
     flex-direction: column;
     gap: 24px;
@@ -12,7 +12,8 @@
 }
 
 .formInfo {
-    max-width: 340px;
+    /* max-width: 340px; */
+    width: 100%;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -45,7 +46,7 @@
 
     .formInfo {
         max-width: 460px;
-        text-align: left;
+        /* text-align: left; */
     }
 
     .formTitle {
@@ -72,6 +73,10 @@
         justify-content: center;
         gap: 100px;
         width: 100%;
+    }
+
+    .formInfo {
+        text-align: left;
     }
 
 

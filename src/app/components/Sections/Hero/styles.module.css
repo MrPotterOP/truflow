@@ -6,6 +6,8 @@
     text-align: center;
 
     overflow: hidden;
+
+    padding: 0 20px;
 }
 
 .heroBox {
@@ -244,8 +246,19 @@
 
 @media (min-width: 768px) {
     .heroContent, .heroText{
-        max-width: 420px;
+        max-width: 90%;
+        align-items: center;
     }
+
+    .heroBtns, .heroVid {
+        max-width: 580px;
+    }
+
+    .btnBox {
+        gap: 30px;
+        justify-content: center;
+    }
+
 }
 
 /* Desktop Styles */

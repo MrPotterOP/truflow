@@ -5,7 +5,7 @@
     align-items: center;
     gap: 66px;
     justify-content: center;
-    padding: 0 10px;
+    padding: 0 20px;
     text-align: center;
     overflow: hidden;
 }
@@ -17,12 +17,14 @@
 }
 
 .catTitle span {
-    background: var(--gl-d2l);
+    /* background: var(--gl-d2l);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
     background-clip: text;
-    color: transparent;
+    color: transparent; */
+
+    color: var(--clr-prime);
 
     font-weight: 700;
 }
@@ -38,6 +40,7 @@
     .catagories {
         margin: 100px 0 0 0;
         gap: 120px;
+        padding: 0 40px;
     }
 
     .catTitle {

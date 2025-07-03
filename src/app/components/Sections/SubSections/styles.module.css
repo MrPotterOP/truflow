@@ -15,6 +15,7 @@
 .promoBox {
     margin: 48px 0 0 0;
     position: relative;
+    padding: 0 20px;
 }
 
 .promoBox::after {
@@ -41,12 +42,13 @@
 .promoTitle {
     font-size: var(--fs-h2);
     font-weight: 700;
-    background: var(--gl-d2l);
+    /* background: var(--gl-d2l);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
     background-clip: text;
-    color: transparent;
+    color: transparent; */
+    color: var(--clr-prime);
 }
 
 .promoDesc {
@@ -68,14 +70,14 @@
     font-size: var(--fs-p2);
     font-weight: 400;
 
-    background: var(--gl-blue);
+    /* background: var(--gl-blue);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent; */
 
     line-height: 1.4;
 
     background-clip: text;
-    color: transparent;
+    /* color: transparent; */
 }
 
 .tagline:last-child {
@@ -84,11 +86,13 @@
 
     line-height: 1;
     font-weight: 700;
-    background: var(--gl-d2l);
-    -webkit-background-clip: text;
+    /* background: var(--gl-d2l); */
+    /* -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    color: transparent;
+    color: transparent; */
+
+    color: var(--clr-prime);
 }
 
 .btnPrime {
@@ -142,6 +146,7 @@
 
     .promoBox {
         margin: 100px 0 0 0;
+        padding: 0 40px;
     }
 
     .promoBox::after {

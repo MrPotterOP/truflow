@@ -181,6 +181,10 @@
         max-width: 100%;
     }
 
+    .productContentBox {
+        margin: 0 auto;
+    }
+
     
 }
 

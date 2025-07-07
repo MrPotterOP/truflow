@@ -33,7 +33,7 @@ const Milestone = () => {
     },
     {
       id: 6,
-      value: '4',
+      value: '9',
       label: 'Marketplaces',
       description: 'Activated with revenue growth in 90 days'
     },
@@ -136,7 +136,7 @@ const Milestone = () => {
           <div className={styles.metric}>
             <div className={styles.metricValue}>
               <span className={styles.value}>
-                <Odometer to={4} from={0} />
+                <Odometer to={9} from={0} />
                 </span><span className={styles.label}>Marketplaces</span>
             </div>
               <p className={styles.description}>Activated with revenue <br />growth in 90 days</p>

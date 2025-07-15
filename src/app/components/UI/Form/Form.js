@@ -329,11 +329,11 @@ function Form({
               }
             }
           } catch (error) {
-            console.error('Error fetching location:', error);
+            console.log('Error fetching location:');
           }
         },
         (error) => {
-          console.error('Geolocation error:', error);
+          console.log('Geolocation error:');
         }
       );
   }, []);
@@ -414,7 +414,7 @@ function Form({
                   >
                     {countryCodes.map((country) => (
                       <option key={country.country} value={country.code}>
-                       {country.country} {country.code} 
+                       {country.country} {country.code}
                       </option>
                     ))}
                   </select>

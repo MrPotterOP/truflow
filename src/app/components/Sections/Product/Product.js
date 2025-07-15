@@ -35,9 +35,6 @@ function Product() {
         setProduct(product);
     }
     
-
-
-
     return ( 
         <div id="product" className={styles.product}>
             <div className={styles.productBox}>
@@ -68,7 +65,9 @@ function Product() {
                         <div className={styles.prodDisplayDynamic}>
                             <AnimatePresence>
                                 <motion.div className={styles.prodDisplayDynamicBox} key={product.img} initial={{ opacity: 0, scale: 0.5 }} animate={{ opacity: 1, scale: 1 }}>
-                                    <Image src={product.img} className={styles[product.id]} alt="product" width={600} height={800} priority />
+                                    {/* --- FIX STARTS HERE --- */}
+                                    <Image src={product.img} className={styles[product.id]} alt="product" fill={true} priority />
+                                    {/* --- FIX ENDS HERE --- */}
                                 </motion.div>
                             </AnimatePresence>
                         </div>
@@ -87,12 +86,6 @@ function Product() {
                 </div>
 
             </div>
-            
-
-            {/* <div className={`${styles.prodTagline} highlight`}>
-                    <p>We&apos;re not just a dashboard. We&apos;re your revenue co-pilot.</p>
-            </div> */}
-
         </div>
      );
 }

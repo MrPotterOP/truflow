@@ -56,23 +56,23 @@ export default function Home() {
       "/assets/logos/init/image-27.png",
       "/assets/logos/init/image-28.png",
       "/assets/logos/init/image-29.png",
-      "/assets/logos/init/image-30.png",
-      "/assets/logos/init/image-31.png",
+      // "/assets/logos/init/image-30.png",
+      // "/assets/logos/init/image-31.png",
 
 
-      "/assets/logos/init/image-34.png",
-      "/assets/logos/init/image-35.png",
-      "/assets/logos/init/image-36.png",
-      "/assets/logos/init/image-37.png",
+      // "/assets/logos/init/image-34.png",
+      // "/assets/logos/init/image-35.png",
+      // "/assets/logos/init/image-36.png",
+      // "/assets/logos/init/image-37.png",
 
-      "/assets/logos/init/image-39.png",
+      // "/assets/logos/init/image-39.png",
 
-      "/assets/logos/init/image-41.png",
+      // "/assets/logos/init/image-41.png",
 
-      "/assets/logos/init/image-43.png",
-      "/assets/logos/init/image-44.png",  
-      "/assets/logos/init/image-45.png",
-      "/assets/logos/init/image-46.png",
+      // "/assets/logos/init/image-43.png",
+      // "/assets/logos/init/image-44.png",  
+      // "/assets/logos/init/image-45.png",
+      // "/assets/logos/init/image-46.png",
     ]
 
     return (
@@ -81,10 +81,10 @@ export default function Home() {
 
             <ImagesScroll
                 imgs={imgs}
-                height="30px"
-                speed={60}
+                height="34px"
+                speed={40}
                 direction="left"
-                gap="38px"
+                gap="32px"
                 pauseOnHover={true}
                 className={styles.integrationsImgs}
             />

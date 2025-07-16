@@ -2,6 +2,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 
 import Chat from "./components/UI/Button/Chat";
+import AnalyticsLoader from "./libs/AnLoader";
 
 const fontPrime = Inter({
   variable: "--font-prime",
@@ -21,6 +22,7 @@ export default function RootLayout({ children }) {
       <body className={`${fontPrime.variable} font-sans`}>
         {children}
         <Chat href="#leadForm" ariaLabel="Open chat" bottom="90px" side="44px" />
+        <AnalyticsLoader />
       </body>
     </html>
   );

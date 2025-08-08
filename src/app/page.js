@@ -56,7 +56,7 @@ export default function Home() {
       "/assets/logos/init/image-27.png",
       "/assets/logos/init/image-28.png",
       "/assets/logos/init/image-29.png",
-      // "/assets/logos/init/image-30.png",
+      "/assets/logos/init/image-30.png",
       // "/assets/logos/init/image-31.png",
 
 

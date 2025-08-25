@@ -14,7 +14,7 @@ const fontPrime = Inter({
 });
 
 export const metadata = {
-  title: "Truflo | Home",
+  title: "TruFlo | Faster Decisions, Smarter Growth",
   description: "Unify fragmented commerce data in real time with TruFlo. Unlock actionable insights to drive performance and enable profitable omnichannel growth.",
 };
 
